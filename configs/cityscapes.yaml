@@ -1,0 +1,24 @@
+# arguments for dataset
+dataset: cityscapes
+nclass: 19
+crop_size: 769
+data_root: Your/Cityscapes/Path
+
+# arguments for training
+epochs: 240
+batch_size: 1
+lr: 0.005  # 8GPUs
+lr_multi: 1.0
+criterion:
+  name: OHEM
+  kwargs:
+    ignore_index: 255
+    thresh: 0.7
+    min_kept: 100000
+conf_thresh: 0.95
+
+# arguments for model
+backbone: resnet50
+multi_grid: True
+replace_stride_with_dilation: [False, True, True]
+dilations: [12, 24, 36]
