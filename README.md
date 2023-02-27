@@ -4,7 +4,9 @@ This codebase contains a strong re-implementation of FixMatch in the scenario of
 
 > **[Revisiting Weak-to-Strong Consistency in Semi-Supervised Semantic Segmentation](https://arxiv.org/abs/2208.09910)**</br>
 > [Lihe Yang](https://liheyoung.github.io), [Lei Qi](http://palm.seu.edu.cn/qilei), [Litong Feng](https://scholar.google.com/citations?user=PnNAAasAAAAJ&hl=en), [Wayne Zhang](http://www.statfe.com), [Yinghuan Shi](https://cs.nju.edu.cn/shiyh/index.htm)</br>
-> *Preprint 2022*
+> *In Conference on Computer Vision and Pattern Recognition (CVPR), 2023*
+
+We have another semi-supervised semantic segmentation work accepted by CVPR 2022: [ST++](https://github.com/LiheYoung/ST-PlusPlus)
 
 > **Abstract.** 
 > In this work, we revisit the weak-to-strong consistency framework, 
@@ -129,16 +131,14 @@ Modify the ``unimatch.py`` to ``supervised.py`` in [train.sh](https://github.com
 
 ## Citation
 
-We have another relevant semi-supervised semantic segmentation project: [ST++](https://github.com/LiheYoung/ST-PlusPlus)
-
 If you find these projects useful, please consider citing:
 
 ```bibtex
-@article{unimatch,
+@inproceedings{unimatch,
   title={Revisiting Weak-to-Strong Consistency in Semi-Supervised Semantic Segmentation},
   author={Yang, Lihe and Qi, Lei and Feng, Litong and Zhang, Wayne and Shi, Yinghuan},
-  journal={arXiv:2208.09910},
-  year={2022}
+  booktitle={CVPR},
+  year={2023}
 }
 
 @inproceedings{st++,
