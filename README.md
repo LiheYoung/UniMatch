@@ -6,7 +6,10 @@ This codebase contains a strong re-implementation of FixMatch in the scenario of
 > [Lihe Yang](https://liheyoung.github.io), [Lei Qi](http://palm.seu.edu.cn/qilei), [Litong Feng](https://scholar.google.com/citations?user=PnNAAasAAAAJ&hl=en), [Wayne Zhang](http://www.statfe.com), [Yinghuan Shi](https://cs.nju.edu.cn/shiyh/index.htm)</br>
 > *In Conference on Computer Vision and Pattern Recognition (CVPR), 2023*
 
-![](./docs/framework.png)
+<p align="center">
+<img src="./docs/framework.png" width=90% height=90% 
+class="center">
+</p>
 
 ## Results
 
