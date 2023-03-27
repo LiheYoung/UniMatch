@@ -11,6 +11,8 @@ This codebase contains a strong re-implementation of FixMatch in the scenario of
 class="center">
 </p>
 
+**We provide a list of [Awesome Semi-Supervised Semantic Segmentation](./docs/SemiSeg.md) works.**
+
 ## Results
 
 **You can check our [training logs](https://github.com/LiheYoung/UniMatch/blob/main/training-logs) for convenient comparisons during reproducing.**
@@ -154,7 +156,3 @@ We have some other works on semi-supervised semantic segmentation:
 - [[CVPR 2022] ST++](https://github.com/LiheYoung/ST-PlusPlus) 
 - [[CVPR 2023] AugSeg](https://github.com/ZhenZHAO/AugSeg)
 - [[CVPR 2023] iMAS](https://github.com/ZhenZHAO/iMAS)
-
-## [Awesome Semi-Supervised Semantic Segmentation](./docs/SemiSeg.md)
-
-We hope this can make it more convenient to you.
