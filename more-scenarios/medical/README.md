@@ -36,7 +36,7 @@ pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 -f https://download.py
 ```
 
 
-### Dataset:
+### Dataset
 
 - ACDC: [image and mask](https://drive.google.com/file/d/1LOust-JfKTDsFnvaidFOcAVhkZrgW1Ac/view?usp=sharing)
 
