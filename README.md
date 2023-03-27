@@ -18,7 +18,7 @@ Below are only part of our results. For more comprenhensive experiments, please 
 
 Labeled images are sampled from the **original high-quality** training set. Results are obtained by DeepLabv3+ based on ResNet-101 with training size 321.
 
-| Method                      | 92        | 183       | 366       | 732       | 1464        |
+| Method                      | 1/16 (92) | 1/8 (183) | 1/4 (366) | 1/2 (732) | Full (1464) |
 | :-------------------------: | :-------: | :-------: | :-------: | :-------: | :---------: |
 | SupBaseline                 | 45.1      | 55.3      | 64.8      | 69.7      | 73.5        |
 | U<sup>2</sup>PL             | 68.0      | 69.2      | 73.7      | 76.2      | 79.5        |
@@ -150,4 +150,6 @@ We have some other works on semi-supervised semantic segmentation:
 - [[CVPR 2023] AugSeg](https://github.com/ZhenZHAO/AugSeg)
 - [[CVPR 2023] iMAS](https://github.com/ZhenZHAO/iMAS)
 
-We provide an [awesome list](./docs/SemiSeg.md) on semi-supervised semantic segmentation. Hope these can make it more convenient to you.
+## [Awesome Semi-Supervised Semantic Segmentation](./docs/SemiSeg.md)
+
+We hope this can make it more convenient to you.
