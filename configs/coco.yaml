@@ -6,8 +6,8 @@ data_root: Your/COCO/Path
 
 # arguments for training
 epochs: 30
-batch_size: 1
-lr: 0.004  # 8GPUs
+batch_size: 2 # per GPU x 4 GPUs
+lr: 0.004
 lr_multi: 10.0
 criterion:
   name: CELoss

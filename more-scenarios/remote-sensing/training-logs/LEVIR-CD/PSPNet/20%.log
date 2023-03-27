@@ -1,0 +1,1062 @@
+[2023-03-24 15:24:47,369][    INFO] {'backbone': 'resnet50',
+ 'batch_size': 8,
+ 'conf_thresh': 0.95,
+ 'config': 'configs/levir.yaml',
+ 'crop_size': 256,
+ 'data_root': '/nvme/yanglihe/datasets/LEVIR-CD-256',
+ 'dataset': 'levir',
+ 'epochs': 80,
+ 'labeled_id_path': 'splits/levir/20%/labeled.txt',
+ 'local_rank': 0,
+ 'lr': 0.02,
+ 'lr_multi': 1.0,
+ 'model': 'pspnet',
+ 'nclass': 2,
+ 'ngpus': 1,
+ 'port': 20607,
+ 'replace_stride_with_dilation': [False, True, True],
+ 'save_path': 'exp/levir/unimatch/pspnet_r50/20%',
+ 'unlabeled_id_path': 'splits/levir/20%/unlabeled.txt'}
+
+[2023-03-24 15:24:47,914][    INFO] Total params: 46.7M
+
+[2023-03-24 15:24:50,817][    INFO] ===========> Epoch: 0, LR: 0.02000, Previous best Changed IoU: 0.00, Overall Accuracy: 0.00
+[2023-03-24 15:25:06,204][    INFO] Iters: 0, Total loss: 0.484, Loss x: 0.967, Loss s: 0.000, Loss w_fp: 0.000, Mask ratio: 0.000
+[2023-03-24 15:26:29,587][    INFO] Iters: 89, Total loss: 0.088, Loss x: 0.163, Loss s: 0.007, Loss w_fp: 0.018, Mask ratio: 0.733
+[2023-03-24 15:27:52,960][    INFO] Iters: 178, Total loss: 0.068, Loss x: 0.129, Loss s: 0.004, Loss w_fp: 0.009, Mask ratio: 0.772
+[2023-03-24 15:29:16,667][    INFO] Iters: 267, Total loss: 0.058, Loss x: 0.112, Loss s: 0.003, Loss w_fp: 0.006, Mask ratio: 0.812
+[2023-03-24 15:30:23,531][    INFO] Iters: 356, Total loss: 0.052, Loss x: 0.101, Loss s: 0.003, Loss w_fp: 0.005, Mask ratio: 0.831
+[2023-03-24 15:31:35,891][    INFO] Iters: 445, Total loss: 0.048, Loss x: 0.092, Loss s: 0.002, Loss w_fp: 0.004, Mask ratio: 0.845
+[2023-03-24 15:32:59,554][    INFO] Iters: 534, Total loss: 0.044, Loss x: 0.085, Loss s: 0.002, Loss w_fp: 0.003, Mask ratio: 0.855
+[2023-03-24 15:34:22,882][    INFO] Iters: 623, Total loss: 0.041, Loss x: 0.081, Loss s: 0.002, Loss w_fp: 0.003, Mask ratio: 0.862
+[2023-03-24 15:36:45,930][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 97.04
+[2023-03-24 15:36:45,930][    INFO] ***** Evaluation ***** >>>> Changed IoU: 48.19
+[2023-03-24 15:36:45,930][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 97.12
+
+[2023-03-24 15:36:46,802][    INFO] ===========> Epoch: 1, LR: 0.01978, Previous best Changed IoU: 48.19, Overall Accuracy: 97.12
+[2023-03-24 15:36:48,018][    INFO] Iters: 0, Total loss: 0.010, Loss x: 0.020, Loss s: 0.000, Loss w_fp: 0.000, Mask ratio: 0.948
+[2023-03-24 15:37:37,512][    INFO] Iters: 89, Total loss: 0.025, Loss x: 0.050, Loss s: 0.001, Loss w_fp: 0.000, Mask ratio: 0.915
+[2023-03-24 15:38:44,811][    INFO] Iters: 178, Total loss: 0.023, Loss x: 0.046, Loss s: 0.000, Loss w_fp: 0.000, Mask ratio: 0.919
+[2023-03-24 15:40:08,896][    INFO] Iters: 267, Total loss: 0.022, Loss x: 0.044, Loss s: 0.000, Loss w_fp: 0.000, Mask ratio: 0.920
+[2023-03-24 15:41:32,785][    INFO] Iters: 356, Total loss: 0.022, Loss x: 0.044, Loss s: 0.000, Loss w_fp: 0.000, Mask ratio: 0.920
+[2023-03-24 15:42:56,909][    INFO] Iters: 445, Total loss: 0.022, Loss x: 0.044, Loss s: 0.000, Loss w_fp: 0.000, Mask ratio: 0.920
+[2023-03-24 15:44:10,286][    INFO] Iters: 534, Total loss: 0.022, Loss x: 0.043, Loss s: 0.000, Loss w_fp: 0.000, Mask ratio: 0.919
+[2023-03-24 15:45:17,653][    INFO] Iters: 623, Total loss: 0.021, Loss x: 0.042, Loss s: 0.000, Loss w_fp: 0.000, Mask ratio: 0.918
+[2023-03-24 15:47:39,062][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 97.88
+[2023-03-24 15:47:39,063][    INFO] ***** Evaluation ***** >>>> Changed IoU: 65.75
+[2023-03-24 15:47:39,063][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 97.96
+
+[2023-03-24 15:47:40,158][    INFO] ===========> Epoch: 2, LR: 0.01955, Previous best Changed IoU: 65.75, Overall Accuracy: 97.96
+[2023-03-24 15:47:41,609][    INFO] Iters: 0, Total loss: 0.014, Loss x: 0.027, Loss s: 0.000, Loss w_fp: 0.000, Mask ratio: 0.915
+[2023-03-24 15:49:05,605][    INFO] Iters: 89, Total loss: 0.018, Loss x: 0.036, Loss s: 0.000, Loss w_fp: 0.000, Mask ratio: 0.928
+[2023-03-24 15:50:23,052][    INFO] Iters: 178, Total loss: 0.019, Loss x: 0.036, Loss s: 0.002, Loss w_fp: 0.002, Mask ratio: 0.929
+[2023-03-24 15:51:24,434][    INFO] Iters: 267, Total loss: 0.018, Loss x: 0.034, Loss s: 0.003, Loss w_fp: 0.001, Mask ratio: 0.932
+[2023-03-24 15:52:48,501][    INFO] Iters: 356, Total loss: 0.018, Loss x: 0.034, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.932
+[2023-03-24 15:54:12,105][    INFO] Iters: 445, Total loss: 0.018, Loss x: 0.034, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.933
+[2023-03-24 15:55:35,750][    INFO] Iters: 534, Total loss: 0.018, Loss x: 0.033, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.934
+[2023-03-24 15:56:59,366][    INFO] Iters: 623, Total loss: 0.018, Loss x: 0.033, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.933
+[2023-03-24 15:59:06,212][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.10
+[2023-03-24 15:59:06,212][    INFO] ***** Evaluation ***** >>>> Changed IoU: 70.15
+[2023-03-24 15:59:06,212][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.18
+
+[2023-03-24 15:59:07,240][    INFO] ===========> Epoch: 3, LR: 0.01932, Previous best Changed IoU: 70.15, Overall Accuracy: 98.18
+[2023-03-24 15:59:08,602][    INFO] Iters: 0, Total loss: 0.011, Loss x: 0.020, Loss s: 0.003, Loss w_fp: 0.001, Mask ratio: 0.928
+[2023-03-24 16:00:32,640][    INFO] Iters: 89, Total loss: 0.017, Loss x: 0.030, Loss s: 0.006, Loss w_fp: 0.001, Mask ratio: 0.936
+[2023-03-24 16:01:56,047][    INFO] Iters: 178, Total loss: 0.016, Loss x: 0.030, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.941
+[2023-03-24 16:03:16,302][    INFO] Iters: 267, Total loss: 0.016, Loss x: 0.029, Loss s: 0.006, Loss w_fp: 0.001, Mask ratio: 0.943
+[2023-03-24 16:04:11,507][    INFO] Iters: 356, Total loss: 0.016, Loss x: 0.029, Loss s: 0.006, Loss w_fp: 0.001, Mask ratio: 0.943
+[2023-03-24 16:05:32,364][    INFO] Iters: 445, Total loss: 0.016, Loss x: 0.029, Loss s: 0.006, Loss w_fp: 0.001, Mask ratio: 0.944
+[2023-03-24 16:06:56,001][    INFO] Iters: 534, Total loss: 0.016, Loss x: 0.029, Loss s: 0.006, Loss w_fp: 0.001, Mask ratio: 0.944
+[2023-03-24 16:08:20,100][    INFO] Iters: 623, Total loss: 0.016, Loss x: 0.028, Loss s: 0.006, Loss w_fp: 0.001, Mask ratio: 0.945
+[2023-03-24 16:10:40,086][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.24
+[2023-03-24 16:10:40,086][    INFO] ***** Evaluation ***** >>>> Changed IoU: 71.80
+[2023-03-24 16:10:40,086][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.32
+
+[2023-03-24 16:10:41,115][    INFO] ===========> Epoch: 4, LR: 0.01910, Previous best Changed IoU: 71.80, Overall Accuracy: 98.32
+[2023-03-24 16:10:42,251][    INFO] Iters: 0, Total loss: 0.005, Loss x: 0.009, Loss s: 0.001, Loss w_fp: 0.000, Mask ratio: 0.979
+[2023-03-24 16:12:01,021][    INFO] Iters: 89, Total loss: 0.016, Loss x: 0.029, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.951
+[2023-03-24 16:13:24,681][    INFO] Iters: 178, Total loss: 0.015, Loss x: 0.028, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.948
+[2023-03-24 16:14:48,101][    INFO] Iters: 267, Total loss: 0.015, Loss x: 0.027, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.948
+[2023-03-24 16:16:12,110][    INFO] Iters: 356, Total loss: 0.015, Loss x: 0.027, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.949
+[2023-03-24 16:17:17,094][    INFO] Iters: 445, Total loss: 0.015, Loss x: 0.027, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.949
+[2023-03-24 16:18:06,335][    INFO] Iters: 534, Total loss: 0.015, Loss x: 0.026, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.949
+[2023-03-24 16:19:24,390][    INFO] Iters: 623, Total loss: 0.015, Loss x: 0.026, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.950
+[2023-03-24 16:21:56,171][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.33
+[2023-03-24 16:21:56,171][    INFO] ***** Evaluation ***** >>>> Changed IoU: 72.06
+[2023-03-24 16:21:56,171][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.40
+
+[2023-03-24 16:21:57,390][    INFO] ===========> Epoch: 5, LR: 0.01887, Previous best Changed IoU: 72.06, Overall Accuracy: 98.40
+[2023-03-24 16:21:58,815][    INFO] Iters: 0, Total loss: 0.013, Loss x: 0.021, Loss s: 0.007, Loss w_fp: 0.001, Mask ratio: 0.890
+[2023-03-24 16:23:22,555][    INFO] Iters: 89, Total loss: 0.013, Loss x: 0.023, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.945
+[2023-03-24 16:24:23,660][    INFO] Iters: 178, Total loss: 0.013, Loss x: 0.024, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.948
+[2023-03-24 16:25:46,083][    INFO] Iters: 267, Total loss: 0.015, Loss x: 0.027, Loss s: 0.006, Loss w_fp: 0.001, Mask ratio: 0.947
+[2023-03-24 16:27:09,794][    INFO] Iters: 356, Total loss: 0.015, Loss x: 0.027, Loss s: 0.006, Loss w_fp: 0.001, Mask ratio: 0.946
+[2023-03-24 16:28:33,395][    INFO] Iters: 445, Total loss: 0.015, Loss x: 0.027, Loss s: 0.006, Loss w_fp: 0.001, Mask ratio: 0.947
+[2023-03-24 16:29:57,274][    INFO] Iters: 534, Total loss: 0.015, Loss x: 0.027, Loss s: 0.006, Loss w_fp: 0.001, Mask ratio: 0.948
+[2023-03-24 16:31:00,603][    INFO] Iters: 623, Total loss: 0.015, Loss x: 0.027, Loss s: 0.006, Loss w_fp: 0.001, Mask ratio: 0.948
+[2023-03-24 16:33:49,786][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.35
+[2023-03-24 16:33:49,787][    INFO] ***** Evaluation ***** >>>> Changed IoU: 72.93
+[2023-03-24 16:33:49,787][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.42
+
+[2023-03-24 16:33:50,966][    INFO] ===========> Epoch: 6, LR: 0.01865, Previous best Changed IoU: 72.93, Overall Accuracy: 98.42
+[2023-03-24 16:33:52,283][    INFO] Iters: 0, Total loss: 0.009, Loss x: 0.017, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.942
+[2023-03-24 16:35:16,132][    INFO] Iters: 89, Total loss: 0.014, Loss x: 0.025, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.950
+[2023-03-24 16:36:37,415][    INFO] Iters: 178, Total loss: 0.013, Loss x: 0.024, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.952
+[2023-03-24 16:37:39,355][    INFO] Iters: 267, Total loss: 0.013, Loss x: 0.024, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.952
+[2023-03-24 16:39:03,102][    INFO] Iters: 356, Total loss: 0.014, Loss x: 0.024, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.953
+[2023-03-24 16:40:27,303][    INFO] Iters: 445, Total loss: 0.014, Loss x: 0.025, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.953
+[2023-03-24 16:41:51,158][    INFO] Iters: 534, Total loss: 0.013, Loss x: 0.024, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.953
+[2023-03-24 16:43:15,109][    INFO] Iters: 623, Total loss: 0.013, Loss x: 0.024, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.954
+[2023-03-24 16:45:20,627][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.42
+[2023-03-24 16:45:20,627][    INFO] ***** Evaluation ***** >>>> Changed IoU: 73.59
+[2023-03-24 16:45:20,627][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.49
+
+[2023-03-24 16:45:21,728][    INFO] ===========> Epoch: 7, LR: 0.01842, Previous best Changed IoU: 73.59, Overall Accuracy: 98.49
+[2023-03-24 16:45:23,169][    INFO] Iters: 0, Total loss: 0.017, Loss x: 0.026, Loss s: 0.014, Loss w_fp: 0.001, Mask ratio: 0.974
+[2023-03-24 16:46:47,008][    INFO] Iters: 89, Total loss: 0.012, Loss x: 0.022, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.954
+[2023-03-24 16:48:11,251][    INFO] Iters: 178, Total loss: 0.012, Loss x: 0.021, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.957
+[2023-03-24 16:49:35,390][    INFO] Iters: 267, Total loss: 0.012, Loss x: 0.021, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.955
+[2023-03-24 16:50:51,854][    INFO] Iters: 356, Total loss: 0.012, Loss x: 0.021, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.956
+[2023-03-24 16:51:53,724][    INFO] Iters: 445, Total loss: 0.012, Loss x: 0.022, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.956
+[2023-03-24 16:53:17,124][    INFO] Iters: 534, Total loss: 0.012, Loss x: 0.022, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.956
+[2023-03-24 16:54:40,798][    INFO] Iters: 623, Total loss: 0.012, Loss x: 0.022, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.956
+[2023-03-24 16:57:30,227][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.47
+[2023-03-24 16:57:30,227][    INFO] ***** Evaluation ***** >>>> Changed IoU: 74.36
+[2023-03-24 16:57:30,227][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.54
+
+[2023-03-24 16:57:31,771][    INFO] ===========> Epoch: 8, LR: 0.01819, Previous best Changed IoU: 74.36, Overall Accuracy: 98.54
+[2023-03-24 16:57:33,017][    INFO] Iters: 0, Total loss: 0.010, Loss x: 0.012, Loss s: 0.016, Loss w_fp: 0.001, Mask ratio: 0.934
+[2023-03-24 16:58:22,457][    INFO] Iters: 89, Total loss: 0.011, Loss x: 0.020, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.957
+[2023-03-24 16:59:24,039][    INFO] Iters: 178, Total loss: 0.011, Loss x: 0.020, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.958
+[2023-03-24 17:00:47,868][    INFO] Iters: 267, Total loss: 0.012, Loss x: 0.021, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.959
+[2023-03-24 17:02:11,517][    INFO] Iters: 356, Total loss: 0.012, Loss x: 0.021, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.959
+[2023-03-24 17:03:34,950][    INFO] Iters: 445, Total loss: 0.012, Loss x: 0.021, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.959
+[2023-03-24 17:04:55,347][    INFO] Iters: 534, Total loss: 0.012, Loss x: 0.021, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.958
+[2023-03-24 17:05:50,077][    INFO] Iters: 623, Total loss: 0.012, Loss x: 0.021, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.958
+[2023-03-24 17:07:25,633][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.51
+[2023-03-24 17:07:25,633][    INFO] ***** Evaluation ***** >>>> Changed IoU: 75.29
+[2023-03-24 17:07:25,633][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.58
+
+[2023-03-24 17:07:26,734][    INFO] ===========> Epoch: 9, LR: 0.01796, Previous best Changed IoU: 75.29, Overall Accuracy: 98.58
+[2023-03-24 17:07:27,708][    INFO] Iters: 0, Total loss: 0.016, Loss x: 0.028, Loss s: 0.009, Loss w_fp: 0.000, Mask ratio: 0.970
+[2023-03-24 17:08:07,423][    INFO] Iters: 89, Total loss: 0.011, Loss x: 0.019, Loss s: 0.006, Loss w_fp: 0.001, Mask ratio: 0.957
+[2023-03-24 17:08:47,145][    INFO] Iters: 178, Total loss: 0.012, Loss x: 0.020, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.956
+[2023-03-24 17:09:26,877][    INFO] Iters: 267, Total loss: 0.012, Loss x: 0.020, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.957
+[2023-03-24 17:10:06,627][    INFO] Iters: 356, Total loss: 0.012, Loss x: 0.021, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.957
+[2023-03-24 17:10:46,415][    INFO] Iters: 445, Total loss: 0.012, Loss x: 0.021, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.958
+[2023-03-24 17:11:26,199][    INFO] Iters: 534, Total loss: 0.012, Loss x: 0.021, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.958
+[2023-03-24 17:12:05,939][    INFO] Iters: 623, Total loss: 0.012, Loss x: 0.021, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.959
+[2023-03-24 17:13:48,257][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.50
+[2023-03-24 17:13:48,258][    INFO] ***** Evaluation ***** >>>> Changed IoU: 73.50
+[2023-03-24 17:13:48,258][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.56
+
+[2023-03-24 17:13:49,003][    INFO] ===========> Epoch: 10, LR: 0.01774, Previous best Changed IoU: 75.29, Overall Accuracy: 98.58
+[2023-03-24 17:13:50,181][    INFO] Iters: 0, Total loss: 0.010, Loss x: 0.018, Loss s: 0.001, Loss w_fp: 0.001, Mask ratio: 0.977
+[2023-03-24 17:14:30,282][    INFO] Iters: 89, Total loss: 0.011, Loss x: 0.019, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.960
+[2023-03-24 17:15:10,024][    INFO] Iters: 178, Total loss: 0.011, Loss x: 0.020, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.961
+[2023-03-24 17:15:49,760][    INFO] Iters: 267, Total loss: 0.011, Loss x: 0.020, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.959
+[2023-03-24 17:16:29,525][    INFO] Iters: 356, Total loss: 0.011, Loss x: 0.020, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.961
+[2023-03-24 17:17:09,288][    INFO] Iters: 445, Total loss: 0.011, Loss x: 0.020, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.960
+[2023-03-24 17:17:49,041][    INFO] Iters: 534, Total loss: 0.011, Loss x: 0.020, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.960
+[2023-03-24 17:18:28,747][    INFO] Iters: 623, Total loss: 0.011, Loss x: 0.020, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.960
+[2023-03-24 17:19:47,726][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.56
+[2023-03-24 17:19:47,726][    INFO] ***** Evaluation ***** >>>> Changed IoU: 75.39
+[2023-03-24 17:19:47,726][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.62
+
+[2023-03-24 17:19:48,729][    INFO] ===========> Epoch: 11, LR: 0.01751, Previous best Changed IoU: 75.39, Overall Accuracy: 98.62
+[2023-03-24 17:19:49,710][    INFO] Iters: 0, Total loss: 0.006, Loss x: 0.008, Loss s: 0.007, Loss w_fp: 0.001, Mask ratio: 0.938
+[2023-03-24 17:20:29,437][    INFO] Iters: 89, Total loss: 0.010, Loss x: 0.017, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.964
+[2023-03-24 17:21:09,335][    INFO] Iters: 178, Total loss: 0.010, Loss x: 0.018, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.961
+[2023-03-24 17:21:50,945][    INFO] Iters: 267, Total loss: 0.010, Loss x: 0.018, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.961
+[2023-03-24 17:22:45,356][    INFO] Iters: 356, Total loss: 0.011, Loss x: 0.019, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.962
+[2023-03-24 17:23:47,641][    INFO] Iters: 445, Total loss: 0.011, Loss x: 0.019, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.961
+[2023-03-24 17:24:57,645][    INFO] Iters: 534, Total loss: 0.011, Loss x: 0.020, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.961
+[2023-03-24 17:25:58,544][    INFO] Iters: 623, Total loss: 0.011, Loss x: 0.020, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.961
+[2023-03-24 17:32:33,744][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.50
+[2023-03-24 17:32:33,745][    INFO] ***** Evaluation ***** >>>> Changed IoU: 75.73
+[2023-03-24 17:32:33,745][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.57
+
+[2023-03-24 17:32:37,667][    INFO] ===========> Epoch: 12, LR: 0.01728, Previous best Changed IoU: 75.73, Overall Accuracy: 98.57
+[2023-03-24 17:32:39,725][    INFO] Iters: 0, Total loss: 0.015, Loss x: 0.026, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.945
+[2023-03-24 17:33:48,938][    INFO] Iters: 89, Total loss: 0.010, Loss x: 0.018, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.963
+[2023-03-24 17:34:54,688][    INFO] Iters: 178, Total loss: 0.010, Loss x: 0.018, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.962
+[2023-03-24 17:36:09,389][    INFO] Iters: 267, Total loss: 0.011, Loss x: 0.019, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.960
+[2023-03-24 17:37:20,458][    INFO] Iters: 356, Total loss: 0.011, Loss x: 0.020, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.960
+[2023-03-24 17:38:33,104][    INFO] Iters: 445, Total loss: 0.011, Loss x: 0.019, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.960
+[2023-03-24 17:39:47,772][    INFO] Iters: 534, Total loss: 0.011, Loss x: 0.019, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.961
+[2023-03-24 17:40:58,421][    INFO] Iters: 623, Total loss: 0.011, Loss x: 0.019, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.961
+[2023-03-24 17:47:56,141][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.58
+[2023-03-24 17:47:56,141][    INFO] ***** Evaluation ***** >>>> Changed IoU: 75.40
+[2023-03-24 17:47:56,141][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.64
+
+[2023-03-24 17:47:57,693][    INFO] ===========> Epoch: 13, LR: 0.01705, Previous best Changed IoU: 75.73, Overall Accuracy: 98.57
+[2023-03-24 17:47:59,918][    INFO] Iters: 0, Total loss: 0.015, Loss x: 0.027, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.963
+[2023-03-24 17:49:21,572][    INFO] Iters: 89, Total loss: 0.010, Loss x: 0.018, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.963
+[2023-03-24 17:50:15,788][    INFO] Iters: 178, Total loss: 0.010, Loss x: 0.018, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.964
+[2023-03-24 17:51:16,013][    INFO] Iters: 267, Total loss: 0.010, Loss x: 0.019, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.964
+[2023-03-24 17:52:20,599][    INFO] Iters: 356, Total loss: 0.011, Loss x: 0.019, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.963
+[2023-03-24 17:53:32,931][    INFO] Iters: 445, Total loss: 0.010, Loss x: 0.018, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.963
+[2023-03-24 17:54:50,142][    INFO] Iters: 534, Total loss: 0.011, Loss x: 0.019, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.963
+[2023-03-24 17:56:04,669][    INFO] Iters: 623, Total loss: 0.010, Loss x: 0.018, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.963
+[2023-03-24 18:03:04,765][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.62
+[2023-03-24 18:03:04,765][    INFO] ***** Evaluation ***** >>>> Changed IoU: 76.14
+[2023-03-24 18:03:04,765][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.68
+
+[2023-03-24 18:03:07,451][    INFO] ===========> Epoch: 14, LR: 0.01682, Previous best Changed IoU: 76.14, Overall Accuracy: 98.68
+[2023-03-24 18:03:09,456][    INFO] Iters: 0, Total loss: 0.015, Loss x: 0.028, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.939
+[2023-03-24 18:04:19,309][    INFO] Iters: 89, Total loss: 0.010, Loss x: 0.018, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.959
+[2023-03-24 18:05:15,639][    INFO] Iters: 178, Total loss: 0.010, Loss x: 0.017, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.962
+[2023-03-24 18:06:16,305][    INFO] Iters: 267, Total loss: 0.010, Loss x: 0.018, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.964
+[2023-03-24 18:07:33,425][    INFO] Iters: 356, Total loss: 0.010, Loss x: 0.018, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.964
+[2023-03-24 18:08:45,772][    INFO] Iters: 445, Total loss: 0.010, Loss x: 0.017, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.965
+[2023-03-24 18:09:59,761][    INFO] Iters: 534, Total loss: 0.010, Loss x: 0.018, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.964
+[2023-03-24 18:11:11,474][    INFO] Iters: 623, Total loss: 0.010, Loss x: 0.018, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.964
+[2023-03-24 18:18:20,914][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.62
+[2023-03-24 18:18:20,914][    INFO] ***** Evaluation ***** >>>> Changed IoU: 76.45
+[2023-03-24 18:18:20,914][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.68
+
+[2023-03-24 18:18:24,381][    INFO] ===========> Epoch: 15, LR: 0.01659, Previous best Changed IoU: 76.45, Overall Accuracy: 98.68
+[2023-03-24 18:18:26,355][    INFO] Iters: 0, Total loss: 0.005, Loss x: 0.007, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.959
+[2023-03-24 18:19:44,351][    INFO] Iters: 89, Total loss: 0.010, Loss x: 0.017, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.963
+[2023-03-24 18:20:45,595][    INFO] Iters: 178, Total loss: 0.010, Loss x: 0.018, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.966
+[2023-03-24 18:21:54,998][    INFO] Iters: 267, Total loss: 0.010, Loss x: 0.018, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.965
+[2023-03-24 18:23:00,609][    INFO] Iters: 356, Total loss: 0.010, Loss x: 0.018, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.964
+[2023-03-24 18:24:06,346][    INFO] Iters: 445, Total loss: 0.010, Loss x: 0.018, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.965
+[2023-03-24 18:25:23,976][    INFO] Iters: 534, Total loss: 0.010, Loss x: 0.018, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.965
+[2023-03-24 18:26:38,830][    INFO] Iters: 623, Total loss: 0.010, Loss x: 0.018, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.965
+[2023-03-24 18:33:26,636][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.60
+[2023-03-24 18:33:26,636][    INFO] ***** Evaluation ***** >>>> Changed IoU: 75.56
+[2023-03-24 18:33:26,636][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.65
+
+[2023-03-24 18:33:28,195][    INFO] ===========> Epoch: 16, LR: 0.01636, Previous best Changed IoU: 76.45, Overall Accuracy: 98.68
+[2023-03-24 18:33:29,818][    INFO] Iters: 0, Total loss: 0.016, Loss x: 0.028, Loss s: 0.006, Loss w_fp: 0.001, Mask ratio: 0.952
+[2023-03-24 18:34:37,123][    INFO] Iters: 89, Total loss: 0.009, Loss x: 0.017, Loss s: 0.003, Loss w_fp: 0.001, Mask ratio: 0.968
+[2023-03-24 18:35:42,862][    INFO] Iters: 178, Total loss: 0.010, Loss x: 0.018, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.968
+[2023-03-24 18:36:51,480][    INFO] Iters: 267, Total loss: 0.010, Loss x: 0.017, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.966
+[2023-03-24 18:38:09,819][    INFO] Iters: 356, Total loss: 0.010, Loss x: 0.017, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.966
+[2023-03-24 18:39:22,953][    INFO] Iters: 445, Total loss: 0.010, Loss x: 0.017, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.966
+[2023-03-24 18:40:35,771][    INFO] Iters: 534, Total loss: 0.010, Loss x: 0.017, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.965
+[2023-03-24 18:41:33,605][    INFO] Iters: 623, Total loss: 0.010, Loss x: 0.017, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.966
+[2023-03-24 18:48:32,459][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.61
+[2023-03-24 18:48:32,459][    INFO] ***** Evaluation ***** >>>> Changed IoU: 76.06
+[2023-03-24 18:48:32,459][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.67
+
+[2023-03-24 18:48:34,034][    INFO] ===========> Epoch: 17, LR: 0.01613, Previous best Changed IoU: 76.45, Overall Accuracy: 98.68
+[2023-03-24 18:48:36,350][    INFO] Iters: 0, Total loss: 0.005, Loss x: 0.009, Loss s: 0.002, Loss w_fp: 0.000, Mask ratio: 0.990
+[2023-03-24 18:49:53,551][    INFO] Iters: 89, Total loss: 0.010, Loss x: 0.018, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.964
+[2023-03-24 18:51:04,528][    INFO] Iters: 178, Total loss: 0.010, Loss x: 0.018, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.965
+[2023-03-24 18:52:15,129][    INFO] Iters: 267, Total loss: 0.010, Loss x: 0.017, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.965
+[2023-03-24 18:53:18,010][    INFO] Iters: 356, Total loss: 0.010, Loss x: 0.017, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.964
+[2023-03-24 18:54:24,533][    INFO] Iters: 445, Total loss: 0.010, Loss x: 0.017, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.965
+[2023-03-24 18:55:42,797][    INFO] Iters: 534, Total loss: 0.010, Loss x: 0.017, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.965
+[2023-03-24 18:56:49,481][    INFO] Iters: 623, Total loss: 0.010, Loss x: 0.017, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.966
+[2023-03-24 19:03:50,775][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.60
+[2023-03-24 19:03:50,775][    INFO] ***** Evaluation ***** >>>> Changed IoU: 75.24
+[2023-03-24 19:03:50,775][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.66
+
+[2023-03-24 19:03:52,744][    INFO] ===========> Epoch: 18, LR: 0.01590, Previous best Changed IoU: 76.45, Overall Accuracy: 98.68
+[2023-03-24 19:03:55,028][    INFO] Iters: 0, Total loss: 0.007, Loss x: 0.003, Loss s: 0.019, Loss w_fp: 0.002, Mask ratio: 0.898
+[2023-03-24 19:05:09,010][    INFO] Iters: 89, Total loss: 0.009, Loss x: 0.016, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.967
+[2023-03-24 19:06:12,795][    INFO] Iters: 178, Total loss: 0.010, Loss x: 0.017, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.967
+[2023-03-24 19:07:14,184][    INFO] Iters: 267, Total loss: 0.010, Loss x: 0.017, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.967
+[2023-03-24 19:08:29,824][    INFO] Iters: 356, Total loss: 0.010, Loss x: 0.017, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.967
+[2023-03-24 19:09:24,098][    INFO] Iters: 445, Total loss: 0.009, Loss x: 0.017, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.966
+[2023-03-24 19:10:31,820][    INFO] Iters: 534, Total loss: 0.009, Loss x: 0.017, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.966
+[2023-03-24 19:11:30,695][    INFO] Iters: 623, Total loss: 0.009, Loss x: 0.016, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.967
+[2023-03-24 19:18:27,372][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.63
+[2023-03-24 19:18:27,373][    INFO] ***** Evaluation ***** >>>> Changed IoU: 75.93
+[2023-03-24 19:18:27,373][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.69
+
+[2023-03-24 19:18:29,544][    INFO] ===========> Epoch: 19, LR: 0.01567, Previous best Changed IoU: 76.45, Overall Accuracy: 98.68
+[2023-03-24 19:18:31,649][    INFO] Iters: 0, Total loss: 0.020, Loss x: 0.038, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-24 19:19:45,548][    INFO] Iters: 89, Total loss: 0.009, Loss x: 0.017, Loss s: 0.003, Loss w_fp: 0.001, Mask ratio: 0.968
+[2023-03-24 19:20:52,824][    INFO] Iters: 178, Total loss: 0.009, Loss x: 0.016, Loss s: 0.003, Loss w_fp: 0.001, Mask ratio: 0.966
+[2023-03-24 19:21:50,826][    INFO] Iters: 267, Total loss: 0.009, Loss x: 0.016, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.967
+[2023-03-24 19:22:57,217][    INFO] Iters: 356, Total loss: 0.009, Loss x: 0.016, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.967
+[2023-03-24 19:23:53,795][    INFO] Iters: 445, Total loss: 0.009, Loss x: 0.015, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.967
+[2023-03-24 19:25:04,988][    INFO] Iters: 534, Total loss: 0.009, Loss x: 0.016, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.967
+[2023-03-24 19:26:19,147][    INFO] Iters: 623, Total loss: 0.009, Loss x: 0.016, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.967
+[2023-03-24 19:32:49,387][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.64
+[2023-03-24 19:32:49,387][    INFO] ***** Evaluation ***** >>>> Changed IoU: 76.21
+[2023-03-24 19:32:49,387][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.70
+
+[2023-03-24 19:32:51,446][    INFO] ===========> Epoch: 20, LR: 0.01544, Previous best Changed IoU: 76.45, Overall Accuracy: 98.68
+[2023-03-24 19:32:53,307][    INFO] Iters: 0, Total loss: 0.003, Loss x: 0.005, Loss s: 0.002, Loss w_fp: 0.001, Mask ratio: 0.983
+[2023-03-24 19:34:02,641][    INFO] Iters: 89, Total loss: 0.008, Loss x: 0.014, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.969
+[2023-03-24 19:35:16,240][    INFO] Iters: 178, Total loss: 0.009, Loss x: 0.015, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.968
+[2023-03-24 19:36:32,462][    INFO] Iters: 267, Total loss: 0.009, Loss x: 0.016, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.967
+[2023-03-24 19:37:42,221][    INFO] Iters: 356, Total loss: 0.009, Loss x: 0.016, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.968
+[2023-03-24 19:38:40,412][    INFO] Iters: 445, Total loss: 0.009, Loss x: 0.016, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.967
+[2023-03-24 19:39:42,251][    INFO] Iters: 534, Total loss: 0.009, Loss x: 0.016, Loss s: 0.003, Loss w_fp: 0.001, Mask ratio: 0.967
+[2023-03-24 19:40:51,746][    INFO] Iters: 623, Total loss: 0.009, Loss x: 0.016, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.968
+[2023-03-24 19:47:16,773][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.68
+[2023-03-24 19:47:16,774][    INFO] ***** Evaluation ***** >>>> Changed IoU: 77.19
+[2023-03-24 19:47:16,774][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.73
+
+[2023-03-24 19:47:19,089][    INFO] ===========> Epoch: 21, LR: 0.01521, Previous best Changed IoU: 77.19, Overall Accuracy: 98.73
+[2023-03-24 19:47:20,851][    INFO] Iters: 0, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Loss w_fp: 0.000, Mask ratio: 0.967
+[2023-03-24 19:48:36,123][    INFO] Iters: 89, Total loss: 0.009, Loss x: 0.016, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.968
+[2023-03-24 19:49:49,265][    INFO] Iters: 178, Total loss: 0.009, Loss x: 0.017, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.968
+[2023-03-24 19:50:44,303][    INFO] Iters: 267, Total loss: 0.009, Loss x: 0.016, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.968
+[2023-03-24 19:51:52,863][    INFO] Iters: 356, Total loss: 0.009, Loss x: 0.016, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.968
+[2023-03-24 19:53:05,920][    INFO] Iters: 445, Total loss: 0.009, Loss x: 0.016, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.968
+[2023-03-24 19:54:18,828][    INFO] Iters: 534, Total loss: 0.009, Loss x: 0.016, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.968
+[2023-03-24 19:55:28,853][    INFO] Iters: 623, Total loss: 0.009, Loss x: 0.016, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.968
+[2023-03-24 20:01:23,364][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.62
+[2023-03-24 20:01:23,364][    INFO] ***** Evaluation ***** >>>> Changed IoU: 75.36
+[2023-03-24 20:01:23,364][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.68
+
+[2023-03-24 20:01:25,023][    INFO] ===========> Epoch: 22, LR: 0.01497, Previous best Changed IoU: 77.19, Overall Accuracy: 98.73
+[2023-03-24 20:01:26,747][    INFO] Iters: 0, Total loss: 0.005, Loss x: 0.010, Loss s: 0.001, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-24 20:02:20,016][    INFO] Iters: 89, Total loss: 0.009, Loss x: 0.016, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.970
+[2023-03-24 20:03:26,563][    INFO] Iters: 178, Total loss: 0.009, Loss x: 0.016, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.970
+[2023-03-24 20:04:43,692][    INFO] Iters: 267, Total loss: 0.009, Loss x: 0.016, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.970
+[2023-03-24 20:05:43,099][    INFO] Iters: 356, Total loss: 0.009, Loss x: 0.016, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.969
+[2023-03-24 20:06:44,613][    INFO] Iters: 445, Total loss: 0.009, Loss x: 0.016, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.969
+[2023-03-24 20:07:47,175][    INFO] Iters: 534, Total loss: 0.009, Loss x: 0.016, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.969
+[2023-03-24 20:08:54,004][    INFO] Iters: 623, Total loss: 0.009, Loss x: 0.015, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.969
+[2023-03-24 20:14:13,019][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.67
+[2023-03-24 20:14:13,019][    INFO] ***** Evaluation ***** >>>> Changed IoU: 77.02
+[2023-03-24 20:14:13,019][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.73
+
+[2023-03-24 20:14:14,396][    INFO] ===========> Epoch: 23, LR: 0.01474, Previous best Changed IoU: 77.19, Overall Accuracy: 98.73
+[2023-03-24 20:14:16,127][    INFO] Iters: 0, Total loss: 0.005, Loss x: 0.004, Loss s: 0.009, Loss w_fp: 0.000, Mask ratio: 0.971
+[2023-03-24 20:15:17,643][    INFO] Iters: 89, Total loss: 0.009, Loss x: 0.017, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.968
+[2023-03-24 20:16:13,036][    INFO] Iters: 178, Total loss: 0.009, Loss x: 0.016, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.969
+[2023-03-24 20:17:08,546][    INFO] Iters: 267, Total loss: 0.009, Loss x: 0.016, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.969
+[2023-03-24 20:18:16,127][    INFO] Iters: 356, Total loss: 0.009, Loss x: 0.016, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.969
+[2023-03-24 20:19:14,814][    INFO] Iters: 445, Total loss: 0.009, Loss x: 0.016, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.969
+[2023-03-24 20:20:08,423][    INFO] Iters: 534, Total loss: 0.009, Loss x: 0.015, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.969
+[2023-03-24 20:20:59,148][    INFO] Iters: 623, Total loss: 0.009, Loss x: 0.016, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.969
+[2023-03-24 20:25:01,769][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.68
+[2023-03-24 20:25:01,770][    INFO] ***** Evaluation ***** >>>> Changed IoU: 77.18
+[2023-03-24 20:25:01,770][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.73
+
+[2023-03-24 20:25:03,470][    INFO] ===========> Epoch: 24, LR: 0.01451, Previous best Changed IoU: 77.19, Overall Accuracy: 98.73
+[2023-03-24 20:25:05,172][    INFO] Iters: 0, Total loss: 0.005, Loss x: 0.009, Loss s: 0.002, Loss w_fp: 0.000, Mask ratio: 0.968
+[2023-03-24 20:26:12,247][    INFO] Iters: 89, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.970
+[2023-03-24 20:27:12,605][    INFO] Iters: 178, Total loss: 0.009, Loss x: 0.015, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.969
+[2023-03-24 20:28:09,863][    INFO] Iters: 267, Total loss: 0.009, Loss x: 0.015, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.970
+[2023-03-24 20:29:05,324][    INFO] Iters: 356, Total loss: 0.009, Loss x: 0.015, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.970
+[2023-03-24 20:29:56,135][    INFO] Iters: 445, Total loss: 0.009, Loss x: 0.015, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.970
+[2023-03-24 20:31:04,562][    INFO] Iters: 534, Total loss: 0.009, Loss x: 0.015, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.970
+[2023-03-24 20:31:54,283][    INFO] Iters: 623, Total loss: 0.009, Loss x: 0.015, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.970
+[2023-03-24 20:35:41,109][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.64
+[2023-03-24 20:35:41,109][    INFO] ***** Evaluation ***** >>>> Changed IoU: 75.91
+[2023-03-24 20:35:41,109][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.70
+
+[2023-03-24 20:35:41,868][    INFO] ===========> Epoch: 25, LR: 0.01428, Previous best Changed IoU: 77.19, Overall Accuracy: 98.73
+[2023-03-24 20:35:43,178][    INFO] Iters: 0, Total loss: 0.011, Loss x: 0.021, Loss s: 0.002, Loss w_fp: 0.000, Mask ratio: 0.997
+[2023-03-24 20:36:32,846][    INFO] Iters: 89, Total loss: 0.008, Loss x: 0.014, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.967
+[2023-03-24 20:37:29,022][    INFO] Iters: 178, Total loss: 0.009, Loss x: 0.015, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.970
+[2023-03-24 20:38:28,976][    INFO] Iters: 267, Total loss: 0.008, Loss x: 0.015, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.969
+[2023-03-24 20:39:19,974][    INFO] Iters: 356, Total loss: 0.009, Loss x: 0.015, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.969
+[2023-03-24 20:40:11,482][    INFO] Iters: 445, Total loss: 0.009, Loss x: 0.015, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.970
+[2023-03-24 20:41:18,331][    INFO] Iters: 534, Total loss: 0.009, Loss x: 0.015, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.970
+[2023-03-24 20:42:09,133][    INFO] Iters: 623, Total loss: 0.009, Loss x: 0.015, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.970
+[2023-03-24 20:46:35,751][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.68
+[2023-03-24 20:46:35,752][    INFO] ***** Evaluation ***** >>>> Changed IoU: 76.69
+[2023-03-24 20:46:35,752][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.74
+
+[2023-03-24 20:46:36,382][    INFO] ===========> Epoch: 26, LR: 0.01404, Previous best Changed IoU: 77.19, Overall Accuracy: 98.73
+[2023-03-24 20:46:37,721][    INFO] Iters: 0, Total loss: 0.009, Loss x: 0.009, Loss s: 0.017, Loss w_fp: 0.001, Mask ratio: 0.959
+[2023-03-24 20:47:33,905][    INFO] Iters: 89, Total loss: 0.009, Loss x: 0.016, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.970
+[2023-03-24 20:48:39,848][    INFO] Iters: 178, Total loss: 0.009, Loss x: 0.016, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.971
+[2023-03-24 20:49:30,214][    INFO] Iters: 267, Total loss: 0.009, Loss x: 0.016, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.971
+[2023-03-24 20:50:35,774][    INFO] Iters: 356, Total loss: 0.009, Loss x: 0.015, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.970
+[2023-03-24 20:51:32,598][    INFO] Iters: 445, Total loss: 0.008, Loss x: 0.015, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.970
+[2023-03-24 20:52:32,054][    INFO] Iters: 534, Total loss: 0.008, Loss x: 0.015, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.970
+[2023-03-24 20:53:32,617][    INFO] Iters: 623, Total loss: 0.008, Loss x: 0.015, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.970
+[2023-03-24 20:56:48,609][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.65
+[2023-03-24 20:56:48,609][    INFO] ***** Evaluation ***** >>>> Changed IoU: 75.75
+[2023-03-24 20:56:48,609][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.70
+
+[2023-03-24 20:56:49,177][    INFO] ===========> Epoch: 27, LR: 0.01381, Previous best Changed IoU: 77.19, Overall Accuracy: 98.73
+[2023-03-24 20:56:50,426][    INFO] Iters: 0, Total loss: 0.008, Loss x: 0.016, Loss s: 0.002, Loss w_fp: 0.000, Mask ratio: 0.990
+[2023-03-24 20:57:56,732][    INFO] Iters: 89, Total loss: 0.008, Loss x: 0.015, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-24 20:58:46,692][    INFO] Iters: 178, Total loss: 0.009, Loss x: 0.016, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.972
+[2023-03-24 20:59:37,062][    INFO] Iters: 267, Total loss: 0.008, Loss x: 0.015, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.971
+[2023-03-24 21:00:43,474][    INFO] Iters: 356, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.971
+[2023-03-24 21:01:35,227][    INFO] Iters: 445, Total loss: 0.008, Loss x: 0.015, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.970
+[2023-03-24 21:02:42,788][    INFO] Iters: 534, Total loss: 0.008, Loss x: 0.015, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.971
+[2023-03-24 21:03:36,020][    INFO] Iters: 623, Total loss: 0.008, Loss x: 0.015, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.970
+[2023-03-24 21:07:14,777][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.68
+[2023-03-24 21:07:14,778][    INFO] ***** Evaluation ***** >>>> Changed IoU: 76.71
+[2023-03-24 21:07:14,778][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.73
+
+[2023-03-24 21:07:15,394][    INFO] ===========> Epoch: 28, LR: 0.01357, Previous best Changed IoU: 77.19, Overall Accuracy: 98.73
+[2023-03-24 21:07:17,043][    INFO] Iters: 0, Total loss: 0.006, Loss x: 0.008, Loss s: 0.006, Loss w_fp: 0.001, Mask ratio: 0.959
+[2023-03-24 21:08:26,157][    INFO] Iters: 89, Total loss: 0.009, Loss x: 0.016, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.972
+[2023-03-24 21:09:34,985][    INFO] Iters: 178, Total loss: 0.009, Loss x: 0.015, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.971
+[2023-03-24 21:10:25,573][    INFO] Iters: 267, Total loss: 0.008, Loss x: 0.015, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.971
+[2023-03-24 21:11:22,994][    INFO] Iters: 356, Total loss: 0.008, Loss x: 0.015, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.971
+[2023-03-24 21:12:25,292][    INFO] Iters: 445, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.971
+[2023-03-24 21:13:16,227][    INFO] Iters: 534, Total loss: 0.008, Loss x: 0.015, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.971
+[2023-03-24 21:14:07,753][    INFO] Iters: 623, Total loss: 0.008, Loss x: 0.015, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.971
+[2023-03-24 21:17:43,531][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.73
+[2023-03-24 21:17:43,532][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.08
+[2023-03-24 21:17:43,532][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.78
+
+[2023-03-24 21:17:44,972][    INFO] ===========> Epoch: 29, LR: 0.01334, Previous best Changed IoU: 78.08, Overall Accuracy: 98.78
+[2023-03-24 21:17:46,358][    INFO] Iters: 0, Total loss: 0.008, Loss x: 0.013, Loss s: 0.006, Loss w_fp: 0.001, Mask ratio: 0.926
+[2023-03-24 21:18:55,754][    INFO] Iters: 89, Total loss: 0.008, Loss x: 0.015, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.971
+[2023-03-24 21:19:48,239][    INFO] Iters: 178, Total loss: 0.009, Loss x: 0.015, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.970
+[2023-03-24 21:20:53,475][    INFO] Iters: 267, Total loss: 0.009, Loss x: 0.015, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.970
+[2023-03-24 21:21:44,016][    INFO] Iters: 356, Total loss: 0.009, Loss x: 0.015, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.970
+[2023-03-24 21:22:34,145][    INFO] Iters: 445, Total loss: 0.009, Loss x: 0.015, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.971
+[2023-03-24 21:23:31,913][    INFO] Iters: 534, Total loss: 0.008, Loss x: 0.015, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.971
+[2023-03-24 21:24:29,411][    INFO] Iters: 623, Total loss: 0.008, Loss x: 0.015, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.971
+[2023-03-24 21:28:31,355][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.69
+[2023-03-24 21:28:31,355][    INFO] ***** Evaluation ***** >>>> Changed IoU: 76.93
+[2023-03-24 21:28:31,355][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.74
+
+[2023-03-24 21:28:32,670][    INFO] ===========> Epoch: 30, LR: 0.01310, Previous best Changed IoU: 78.08, Overall Accuracy: 98.78
+[2023-03-24 21:28:34,265][    INFO] Iters: 0, Total loss: 0.009, Loss x: 0.008, Loss s: 0.017, Loss w_fp: 0.001, Mask ratio: 0.935
+[2023-03-24 21:29:24,771][    INFO] Iters: 89, Total loss: 0.008, Loss x: 0.014, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.968
+[2023-03-24 21:30:31,720][    INFO] Iters: 178, Total loss: 0.008, Loss x: 0.014, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.971
+[2023-03-24 21:31:27,197][    INFO] Iters: 267, Total loss: 0.008, Loss x: 0.014, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.971
+[2023-03-24 21:32:35,307][    INFO] Iters: 356, Total loss: 0.008, Loss x: 0.014, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.971
+[2023-03-24 21:33:25,451][    INFO] Iters: 445, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.971
+[2023-03-24 21:34:16,282][    INFO] Iters: 534, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.971
+[2023-03-24 21:35:19,438][    INFO] Iters: 623, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.971
+[2023-03-24 21:39:37,896][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.74
+[2023-03-24 21:39:37,896][    INFO] ***** Evaluation ***** >>>> Changed IoU: 77.89
+[2023-03-24 21:39:37,896][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.79
+
+[2023-03-24 21:39:38,668][    INFO] ===========> Epoch: 31, LR: 0.01287, Previous best Changed IoU: 78.08, Overall Accuracy: 98.78
+[2023-03-24 21:39:39,935][    INFO] Iters: 0, Total loss: 0.012, Loss x: 0.023, Loss s: 0.000, Loss w_fp: 0.000, Mask ratio: 0.997
+[2023-03-24 21:40:32,141][    INFO] Iters: 89, Total loss: 0.008, Loss x: 0.014, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.972
+[2023-03-24 21:41:40,149][    INFO] Iters: 178, Total loss: 0.008, Loss x: 0.014, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.972
+[2023-03-24 21:42:33,982][    INFO] Iters: 267, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.972
+[2023-03-24 21:43:41,498][    INFO] Iters: 356, Total loss: 0.008, Loss x: 0.014, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.971
+[2023-03-24 21:44:32,424][    INFO] Iters: 445, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.971
+[2023-03-24 21:45:21,870][    INFO] Iters: 534, Total loss: 0.008, Loss x: 0.014, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.972
+[2023-03-24 21:46:27,394][    INFO] Iters: 623, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.972
+[2023-03-24 21:50:25,093][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.73
+[2023-03-24 21:50:25,093][    INFO] ***** Evaluation ***** >>>> Changed IoU: 77.57
+[2023-03-24 21:50:25,093][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.78
+
+[2023-03-24 21:50:25,687][    INFO] ===========> Epoch: 32, LR: 0.01263, Previous best Changed IoU: 78.08, Overall Accuracy: 98.78
+[2023-03-24 21:50:26,915][    INFO] Iters: 0, Total loss: 0.006, Loss x: 0.012, Loss s: 0.001, Loss w_fp: 0.000, Mask ratio: 0.992
+[2023-03-24 21:51:23,267][    INFO] Iters: 89, Total loss: 0.009, Loss x: 0.016, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.972
+[2023-03-24 21:52:29,290][    INFO] Iters: 178, Total loss: 0.008, Loss x: 0.014, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.972
+[2023-03-24 21:53:23,238][    INFO] Iters: 267, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.972
+[2023-03-24 21:54:31,114][    INFO] Iters: 356, Total loss: 0.008, Loss x: 0.014, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.972
+[2023-03-24 21:55:25,653][    INFO] Iters: 445, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.972
+[2023-03-24 21:56:31,306][    INFO] Iters: 534, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.972
+[2023-03-24 21:57:21,465][    INFO] Iters: 623, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.972
+[2023-03-24 22:01:26,769][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.74
+[2023-03-24 22:01:26,769][    INFO] ***** Evaluation ***** >>>> Changed IoU: 77.75
+[2023-03-24 22:01:26,770][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.79
+
+[2023-03-24 22:01:27,709][    INFO] ===========> Epoch: 33, LR: 0.01239, Previous best Changed IoU: 78.08, Overall Accuracy: 98.78
+[2023-03-24 22:01:29,225][    INFO] Iters: 0, Total loss: 0.012, Loss x: 0.023, Loss s: 0.002, Loss w_fp: 0.000, Mask ratio: 0.991
+[2023-03-24 22:02:20,610][    INFO] Iters: 89, Total loss: 0.008, Loss x: 0.015, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.972
+[2023-03-24 22:03:28,979][    INFO] Iters: 178, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-24 22:04:30,311][    INFO] Iters: 267, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-24 22:05:31,525][    INFO] Iters: 356, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.972
+[2023-03-24 22:06:22,422][    INFO] Iters: 445, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.972
+[2023-03-24 22:07:12,236][    INFO] Iters: 534, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.972
+[2023-03-24 22:08:06,365][    INFO] Iters: 623, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-24 22:11:57,677][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.70
+[2023-03-24 22:11:57,677][    INFO] ***** Evaluation ***** >>>> Changed IoU: 77.08
+[2023-03-24 22:11:57,677][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.76
+
+[2023-03-24 22:11:58,567][    INFO] ===========> Epoch: 34, LR: 0.01215, Previous best Changed IoU: 78.08, Overall Accuracy: 98.78
+[2023-03-24 22:11:59,919][    INFO] Iters: 0, Total loss: 0.006, Loss x: 0.010, Loss s: 0.002, Loss w_fp: 0.001, Mask ratio: 0.975
+[2023-03-24 22:12:49,797][    INFO] Iters: 89, Total loss: 0.009, Loss x: 0.015, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.968
+[2023-03-24 22:13:40,347][    INFO] Iters: 178, Total loss: 0.008, Loss x: 0.015, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.970
+[2023-03-24 22:14:46,667][    INFO] Iters: 267, Total loss: 0.008, Loss x: 0.013, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.971
+[2023-03-24 22:15:36,763][    INFO] Iters: 356, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.972
+[2023-03-24 22:16:32,975][    INFO] Iters: 445, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.972
+[2023-03-24 22:17:42,382][    INFO] Iters: 534, Total loss: 0.008, Loss x: 0.014, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-24 22:18:45,185][    INFO] Iters: 623, Total loss: 0.008, Loss x: 0.014, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.972
+[2023-03-24 22:20:53,286][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.54
+[2023-03-24 22:20:53,286][    INFO] ***** Evaluation ***** >>>> Changed IoU: 73.93
+[2023-03-24 22:20:53,286][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.59
+
+[2023-03-24 22:20:53,858][    INFO] ===========> Epoch: 35, LR: 0.01192, Previous best Changed IoU: 78.08, Overall Accuracy: 98.78
+[2023-03-24 22:20:55,427][    INFO] Iters: 0, Total loss: 0.011, Loss x: 0.019, Loss s: 0.003, Loss w_fp: 0.001, Mask ratio: 0.961
+[2023-03-24 22:21:53,982][    INFO] Iters: 89, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-24 22:23:03,457][    INFO] Iters: 178, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-24 22:24:06,661][    INFO] Iters: 267, Total loss: 0.008, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-24 22:25:15,510][    INFO] Iters: 356, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.972
+[2023-03-24 22:26:27,771][    INFO] Iters: 445, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.972
+[2023-03-24 22:27:31,996][    INFO] Iters: 534, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.972
+[2023-03-24 22:28:40,340][    INFO] Iters: 623, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.972
+[2023-03-24 22:31:07,150][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.70
+[2023-03-24 22:31:07,150][    INFO] ***** Evaluation ***** >>>> Changed IoU: 76.86
+[2023-03-24 22:31:07,150][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.75
+
+[2023-03-24 22:31:07,737][    INFO] ===========> Epoch: 36, LR: 0.01168, Previous best Changed IoU: 78.08, Overall Accuracy: 98.78
+[2023-03-24 22:31:09,038][    INFO] Iters: 0, Total loss: 0.002, Loss x: 0.002, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.997
+[2023-03-24 22:32:11,959][    INFO] Iters: 89, Total loss: 0.008, Loss x: 0.013, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-24 22:33:24,124][    INFO] Iters: 178, Total loss: 0.008, Loss x: 0.014, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-24 22:34:36,037][    INFO] Iters: 267, Total loss: 0.008, Loss x: 0.014, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.972
+[2023-03-24 22:35:28,449][    INFO] Iters: 356, Total loss: 0.008, Loss x: 0.014, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.972
+[2023-03-24 22:36:08,377][    INFO] Iters: 445, Total loss: 0.008, Loss x: 0.014, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.971
+[2023-03-24 22:36:48,220][    INFO] Iters: 534, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.972
+[2023-03-24 22:37:27,967][    INFO] Iters: 623, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.972
+[2023-03-24 22:38:53,609][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.73
+[2023-03-24 22:38:53,609][    INFO] ***** Evaluation ***** >>>> Changed IoU: 77.83
+[2023-03-24 22:38:53,609][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.79
+
+[2023-03-24 22:38:54,198][    INFO] ===========> Epoch: 37, LR: 0.01144, Previous best Changed IoU: 78.08, Overall Accuracy: 98.78
+[2023-03-24 22:38:55,173][    INFO] Iters: 0, Total loss: 0.012, Loss x: 0.021, Loss s: 0.006, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-24 22:39:34,912][    INFO] Iters: 89, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-24 22:40:14,667][    INFO] Iters: 178, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-24 22:40:54,455][    INFO] Iters: 267, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-24 22:41:34,186][    INFO] Iters: 356, Total loss: 0.008, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-24 22:42:13,949][    INFO] Iters: 445, Total loss: 0.008, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-24 22:42:53,793][    INFO] Iters: 534, Total loss: 0.008, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-24 22:43:33,586][    INFO] Iters: 623, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-24 22:44:53,806][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.75
+[2023-03-24 22:44:53,806][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.34
+[2023-03-24 22:44:53,806][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.80
+
+[2023-03-24 22:44:54,826][    INFO] ===========> Epoch: 38, LR: 0.01120, Previous best Changed IoU: 78.34, Overall Accuracy: 98.80
+[2023-03-24 22:44:55,783][    INFO] Iters: 0, Total loss: 0.007, Loss x: 0.013, Loss s: 0.002, Loss w_fp: 0.001, Mask ratio: 0.979
+[2023-03-24 22:45:35,548][    INFO] Iters: 89, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-24 22:46:15,357][    INFO] Iters: 178, Total loss: 0.008, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.972
+[2023-03-24 22:46:55,175][    INFO] Iters: 267, Total loss: 0.008, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.972
+[2023-03-24 22:47:34,975][    INFO] Iters: 356, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-24 22:48:14,824][    INFO] Iters: 445, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-24 22:48:54,625][    INFO] Iters: 534, Total loss: 0.008, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-24 22:49:34,409][    INFO] Iters: 623, Total loss: 0.008, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-24 22:50:55,480][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.72
+[2023-03-24 22:50:55,481][    INFO] ***** Evaluation ***** >>>> Changed IoU: 77.62
+[2023-03-24 22:50:55,481][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.78
+
+[2023-03-24 22:50:56,044][    INFO] ===========> Epoch: 39, LR: 0.01096, Previous best Changed IoU: 78.34, Overall Accuracy: 98.80
+[2023-03-24 22:50:57,001][    INFO] Iters: 0, Total loss: 0.007, Loss x: 0.012, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.967
+[2023-03-24 22:51:36,735][    INFO] Iters: 89, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-24 22:52:16,444][    INFO] Iters: 178, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-24 22:52:56,188][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-24 22:53:35,908][    INFO] Iters: 356, Total loss: 0.008, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-24 22:54:15,608][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-24 22:54:55,352][    INFO] Iters: 534, Total loss: 0.008, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-24 22:55:35,294][    INFO] Iters: 623, Total loss: 0.008, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-24 22:56:59,400][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.71
+[2023-03-24 22:56:59,400][    INFO] ***** Evaluation ***** >>>> Changed IoU: 77.54
+[2023-03-24 22:56:59,400][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.77
+
+[2023-03-24 22:56:59,912][    INFO] ===========> Epoch: 40, LR: 0.01072, Previous best Changed IoU: 78.34, Overall Accuracy: 98.80
+[2023-03-24 22:57:00,896][    INFO] Iters: 0, Total loss: 0.002, Loss x: 0.002, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.978
+[2023-03-24 22:57:40,657][    INFO] Iters: 89, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.971
+[2023-03-24 22:58:20,355][    INFO] Iters: 178, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-24 22:59:00,102][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-24 22:59:39,910][    INFO] Iters: 356, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-24 23:00:19,764][    INFO] Iters: 445, Total loss: 0.008, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-24 23:00:59,661][    INFO] Iters: 534, Total loss: 0.008, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-24 23:01:39,589][    INFO] Iters: 623, Total loss: 0.008, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-24 23:03:06,812][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.71
+[2023-03-24 23:03:06,812][    INFO] ***** Evaluation ***** >>>> Changed IoU: 77.26
+[2023-03-24 23:03:06,812][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.77
+
+[2023-03-24 23:03:07,334][    INFO] ===========> Epoch: 41, LR: 0.01048, Previous best Changed IoU: 78.34, Overall Accuracy: 98.80
+[2023-03-24 23:03:08,260][    INFO] Iters: 0, Total loss: 0.003, Loss x: 0.003, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.953
+[2023-03-24 23:03:47,932][    INFO] Iters: 89, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-24 23:04:27,647][    INFO] Iters: 178, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.972
+[2023-03-24 23:05:07,372][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-24 23:05:47,074][    INFO] Iters: 356, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-24 23:06:26,783][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-24 23:07:06,508][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-24 23:07:46,249][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-24 23:09:04,570][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.77
+[2023-03-24 23:09:04,570][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.67
+[2023-03-24 23:09:04,570][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.83
+
+[2023-03-24 23:09:05,611][    INFO] ===========> Epoch: 42, LR: 0.01023, Previous best Changed IoU: 78.67, Overall Accuracy: 98.83
+[2023-03-24 23:09:06,604][    INFO] Iters: 0, Total loss: 0.003, Loss x: 0.003, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.967
+[2023-03-24 23:09:46,406][    INFO] Iters: 89, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-24 23:10:26,118][    INFO] Iters: 178, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-24 23:11:05,836][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-24 23:11:45,544][    INFO] Iters: 356, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-24 23:12:25,276][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-24 23:13:04,997][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-24 23:13:44,693][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-24 23:15:02,143][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.76
+[2023-03-24 23:15:02,143][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.60
+[2023-03-24 23:15:02,143][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.81
+
+[2023-03-24 23:15:02,647][    INFO] ===========> Epoch: 43, LR: 0.00999, Previous best Changed IoU: 78.67, Overall Accuracy: 98.83
+[2023-03-24 23:15:03,580][    INFO] Iters: 0, Total loss: 0.011, Loss x: 0.022, Loss s: 0.001, Loss w_fp: 0.000, Mask ratio: 0.985
+[2023-03-24 23:15:43,270][    INFO] Iters: 89, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-24 23:16:23,062][    INFO] Iters: 178, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-24 23:17:02,838][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-24 23:17:42,550][    INFO] Iters: 356, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-24 23:18:22,274][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-24 23:19:02,181][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-24 23:19:42,127][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-24 23:21:02,262][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.76
+[2023-03-24 23:21:02,262][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.22
+[2023-03-24 23:21:02,262][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.81
+
+[2023-03-24 23:21:02,774][    INFO] ===========> Epoch: 44, LR: 0.00975, Previous best Changed IoU: 78.67, Overall Accuracy: 98.83
+[2023-03-24 23:21:03,764][    INFO] Iters: 0, Total loss: 0.006, Loss x: 0.011, Loss s: 0.001, Loss w_fp: 0.000, Mask ratio: 0.983
+[2023-03-24 23:21:43,524][    INFO] Iters: 89, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-24 23:22:23,251][    INFO] Iters: 178, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-24 23:23:03,008][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-24 23:23:42,784][    INFO] Iters: 356, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-24 23:24:22,500][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-24 23:25:02,199][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-24 23:25:41,951][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-24 23:27:00,538][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.75
+[2023-03-24 23:27:00,538][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.25
+[2023-03-24 23:27:00,538][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.81
+
+[2023-03-24 23:27:01,057][    INFO] ===========> Epoch: 45, LR: 0.00950, Previous best Changed IoU: 78.67, Overall Accuracy: 98.83
+[2023-03-24 23:27:02,051][    INFO] Iters: 0, Total loss: 0.001, Loss x: 0.001, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.987
+[2023-03-24 23:27:41,734][    INFO] Iters: 89, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-24 23:28:21,419][    INFO] Iters: 178, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-24 23:29:01,116][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-24 23:29:40,858][    INFO] Iters: 356, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-24 23:30:20,593][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-24 23:31:00,387][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-24 23:31:40,081][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-24 23:32:58,232][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.73
+[2023-03-24 23:32:58,233][    INFO] ***** Evaluation ***** >>>> Changed IoU: 77.38
+[2023-03-24 23:32:58,233][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.78
+
+[2023-03-24 23:32:58,747][    INFO] ===========> Epoch: 46, LR: 0.00926, Previous best Changed IoU: 78.67, Overall Accuracy: 98.83
+[2023-03-24 23:32:59,680][    INFO] Iters: 0, Total loss: 0.010, Loss x: 0.017, Loss s: 0.007, Loss w_fp: 0.000, Mask ratio: 0.990
+[2023-03-24 23:33:39,395][    INFO] Iters: 89, Total loss: 0.008, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-24 23:34:19,120][    INFO] Iters: 178, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-24 23:34:58,858][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-24 23:35:38,626][    INFO] Iters: 356, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-24 23:36:18,370][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-24 23:36:58,125][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-24 23:37:37,876][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-24 23:38:57,931][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.76
+[2023-03-24 23:38:57,932][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.37
+[2023-03-24 23:38:57,932][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.82
+
+[2023-03-24 23:38:58,447][    INFO] ===========> Epoch: 47, LR: 0.00901, Previous best Changed IoU: 78.67, Overall Accuracy: 98.83
+[2023-03-24 23:38:59,402][    INFO] Iters: 0, Total loss: 0.002, Loss x: 0.004, Loss s: 0.001, Loss w_fp: 0.000, Mask ratio: 0.989
+[2023-03-24 23:39:39,178][    INFO] Iters: 89, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-24 23:40:18,971][    INFO] Iters: 178, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-24 23:40:58,680][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-24 23:41:38,421][    INFO] Iters: 356, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-24 23:42:18,126][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-24 23:42:57,875][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-24 23:43:37,569][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-24 23:45:01,279][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.79
+[2023-03-24 23:45:01,279][    INFO] ***** Evaluation ***** >>>> Changed IoU: 79.04
+[2023-03-24 23:45:01,279][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.84
+
+[2023-03-24 23:45:02,327][    INFO] ===========> Epoch: 48, LR: 0.00877, Previous best Changed IoU: 79.04, Overall Accuracy: 98.84
+[2023-03-24 23:45:03,301][    INFO] Iters: 0, Total loss: 0.010, Loss x: 0.018, Loss s: 0.002, Loss w_fp: 0.001, Mask ratio: 0.962
+[2023-03-24 23:45:42,996][    INFO] Iters: 89, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-24 23:46:22,695][    INFO] Iters: 178, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-24 23:47:02,382][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-24 23:47:42,084][    INFO] Iters: 356, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-24 23:48:21,783][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-24 23:49:01,488][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-24 23:49:41,303][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-24 23:50:59,737][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.77
+[2023-03-24 23:50:59,737][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.36
+[2023-03-24 23:50:59,737][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.82
+
+[2023-03-24 23:51:00,256][    INFO] ===========> Epoch: 49, LR: 0.00852, Previous best Changed IoU: 79.04, Overall Accuracy: 98.84
+[2023-03-24 23:51:01,163][    INFO] Iters: 0, Total loss: 0.004, Loss x: 0.004, Loss s: 0.007, Loss w_fp: 0.000, Mask ratio: 0.959
+[2023-03-24 23:51:40,837][    INFO] Iters: 89, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-24 23:52:20,546][    INFO] Iters: 178, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-24 23:53:00,276][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-24 23:53:40,008][    INFO] Iters: 356, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-24 23:54:19,771][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-24 23:54:59,549][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-24 23:55:39,270][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-24 23:56:57,109][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.76
+[2023-03-24 23:56:57,110][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.32
+[2023-03-24 23:56:57,110][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.82
+
+[2023-03-24 23:56:57,618][    INFO] ===========> Epoch: 50, LR: 0.00827, Previous best Changed IoU: 79.04, Overall Accuracy: 98.84
+[2023-03-24 23:56:58,575][    INFO] Iters: 0, Total loss: 0.011, Loss x: 0.021, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.987
+[2023-03-24 23:57:38,277][    INFO] Iters: 89, Total loss: 0.007, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-24 23:58:17,960][    INFO] Iters: 178, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-24 23:58:57,736][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-24 23:59:37,480][    INFO] Iters: 356, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 00:00:17,224][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 00:00:57,016][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 00:01:36,731][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 00:02:54,852][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.75
+[2023-03-25 00:02:54,853][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.16
+[2023-03-25 00:02:54,853][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.81
+
+[2023-03-25 00:02:55,349][    INFO] ===========> Epoch: 51, LR: 0.00802, Previous best Changed IoU: 79.04, Overall Accuracy: 98.84
+[2023-03-25 00:02:56,272][    INFO] Iters: 0, Total loss: 0.002, Loss x: 0.003, Loss s: 0.001, Loss w_fp: 0.000, Mask ratio: 0.998
+[2023-03-25 00:03:36,012][    INFO] Iters: 89, Total loss: 0.008, Loss x: 0.013, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-25 00:04:15,715][    INFO] Iters: 178, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 00:04:55,433][    INFO] Iters: 267, Total loss: 0.008, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 00:05:35,141][    INFO] Iters: 356, Total loss: 0.008, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 00:06:14,867][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 00:06:54,563][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 00:07:34,261][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 00:08:51,906][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.76
+[2023-03-25 00:08:51,907][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.30
+[2023-03-25 00:08:51,907][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.81
+
+[2023-03-25 00:08:52,419][    INFO] ===========> Epoch: 52, LR: 0.00778, Previous best Changed IoU: 79.04, Overall Accuracy: 98.84
+[2023-03-25 00:08:53,353][    INFO] Iters: 0, Total loss: 0.003, Loss x: 0.004, Loss s: 0.003, Loss w_fp: 0.001, Mask ratio: 0.958
+[2023-03-25 00:09:33,069][    INFO] Iters: 89, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-25 00:10:12,754][    INFO] Iters: 178, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-25 00:10:52,458][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 00:11:32,137][    INFO] Iters: 356, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 00:12:11,837][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 00:12:51,621][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 00:13:31,347][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 00:14:50,272][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.77
+[2023-03-25 00:14:50,272][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.38
+[2023-03-25 00:14:50,272][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.82
+
+[2023-03-25 00:14:50,774][    INFO] ===========> Epoch: 53, LR: 0.00752, Previous best Changed IoU: 79.04, Overall Accuracy: 98.84
+[2023-03-25 00:14:51,729][    INFO] Iters: 0, Total loss: 0.014, Loss x: 0.027, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.987
+[2023-03-25 00:15:31,724][    INFO] Iters: 89, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.973
+[2023-03-25 00:16:11,516][    INFO] Iters: 178, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 00:16:51,222][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 00:17:30,948][    INFO] Iters: 356, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 00:18:10,639][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 00:18:50,327][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 00:19:30,037][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 00:20:48,532][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.76
+[2023-03-25 00:20:48,532][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.12
+[2023-03-25 00:20:48,532][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.81
+
+[2023-03-25 00:20:49,031][    INFO] ===========> Epoch: 54, LR: 0.00727, Previous best Changed IoU: 79.04, Overall Accuracy: 98.84
+[2023-03-25 00:20:49,971][    INFO] Iters: 0, Total loss: 0.003, Loss x: 0.004, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.957
+[2023-03-25 00:21:29,693][    INFO] Iters: 89, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-25 00:22:09,441][    INFO] Iters: 178, Total loss: 0.008, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 00:22:49,166][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 00:23:28,873][    INFO] Iters: 356, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 00:24:08,596][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 00:24:48,272][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 00:25:27,958][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 00:26:50,231][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.75
+[2023-03-25 00:26:50,231][    INFO] ***** Evaluation ***** >>>> Changed IoU: 77.96
+[2023-03-25 00:26:50,231][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.80
+
+[2023-03-25 00:26:50,764][    INFO] ===========> Epoch: 55, LR: 0.00702, Previous best Changed IoU: 79.04, Overall Accuracy: 98.84
+[2023-03-25 00:26:51,762][    INFO] Iters: 0, Total loss: 0.010, Loss x: 0.020, Loss s: 0.001, Loss w_fp: 0.000, Mask ratio: 0.981
+[2023-03-25 00:27:31,495][    INFO] Iters: 89, Total loss: 0.007, Loss x: 0.013, Loss s: 0.002, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 00:28:11,204][    INFO] Iters: 178, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 00:28:50,933][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 00:29:30,678][    INFO] Iters: 356, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 00:30:10,402][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 00:30:50,105][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 00:31:29,836][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 00:32:47,858][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.77
+[2023-03-25 00:32:47,858][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.50
+[2023-03-25 00:32:47,858][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.82
+
+[2023-03-25 00:32:48,359][    INFO] ===========> Epoch: 56, LR: 0.00677, Previous best Changed IoU: 79.04, Overall Accuracy: 98.84
+[2023-03-25 00:32:49,285][    INFO] Iters: 0, Total loss: 0.007, Loss x: 0.014, Loss s: 0.001, Loss w_fp: 0.000, Mask ratio: 0.994
+[2023-03-25 00:33:28,949][    INFO] Iters: 89, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 00:34:08,653][    INFO] Iters: 178, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 00:34:48,351][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 00:35:28,066][    INFO] Iters: 356, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 00:36:07,834][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 00:36:47,539][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 00:37:27,244][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 00:38:44,362][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.75
+[2023-03-25 00:38:44,362][    INFO] ***** Evaluation ***** >>>> Changed IoU: 77.77
+[2023-03-25 00:38:44,362][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.80
+
+[2023-03-25 00:38:44,864][    INFO] ===========> Epoch: 57, LR: 0.00651, Previous best Changed IoU: 79.04, Overall Accuracy: 98.84
+[2023-03-25 00:38:45,809][    INFO] Iters: 0, Total loss: 0.009, Loss x: 0.017, Loss s: 0.002, Loss w_fp: 0.000, Mask ratio: 0.985
+[2023-03-25 00:39:25,503][    INFO] Iters: 89, Total loss: 0.008, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 00:40:05,211][    INFO] Iters: 178, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 00:40:44,968][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 00:41:24,706][    INFO] Iters: 356, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 00:42:04,414][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 00:42:44,147][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 00:43:23,849][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 00:44:40,345][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.76
+[2023-03-25 00:44:40,345][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.17
+[2023-03-25 00:44:40,345][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.81
+
+[2023-03-25 00:44:40,865][    INFO] ===========> Epoch: 58, LR: 0.00626, Previous best Changed IoU: 79.04, Overall Accuracy: 98.84
+[2023-03-25 00:44:41,795][    INFO] Iters: 0, Total loss: 0.009, Loss x: 0.015, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.964
+[2023-03-25 00:45:21,474][    INFO] Iters: 89, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.981
+[2023-03-25 00:46:01,164][    INFO] Iters: 178, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.978
+[2023-03-25 00:46:40,835][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 00:47:20,502][    INFO] Iters: 356, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 00:48:00,196][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 00:48:39,924][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 00:49:19,668][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 00:50:36,095][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.77
+[2023-03-25 00:50:36,095][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.32
+[2023-03-25 00:50:36,095][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.82
+
+[2023-03-25 00:50:36,591][    INFO] ===========> Epoch: 59, LR: 0.00600, Previous best Changed IoU: 79.04, Overall Accuracy: 98.84
+[2023-03-25 00:50:37,477][    INFO] Iters: 0, Total loss: 0.005, Loss x: 0.008, Loss s: 0.002, Loss w_fp: 0.000, Mask ratio: 0.971
+[2023-03-25 00:51:17,129][    INFO] Iters: 89, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 00:51:56,825][    INFO] Iters: 178, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 00:52:36,489][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 00:53:16,145][    INFO] Iters: 356, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 00:53:55,791][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 00:54:35,452][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 00:55:15,132][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 00:56:31,486][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.78
+[2023-03-25 00:56:31,486][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.71
+[2023-03-25 00:56:31,486][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.84
+
+[2023-03-25 00:56:31,978][    INFO] ===========> Epoch: 60, LR: 0.00574, Previous best Changed IoU: 79.04, Overall Accuracy: 98.84
+[2023-03-25 00:56:32,886][    INFO] Iters: 0, Total loss: 0.007, Loss x: 0.011, Loss s: 0.007, Loss w_fp: 0.001, Mask ratio: 0.947
+[2023-03-25 00:57:12,526][    INFO] Iters: 89, Total loss: 0.006, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 00:57:52,177][    INFO] Iters: 178, Total loss: 0.007, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 00:58:31,835][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 00:59:11,465][    INFO] Iters: 356, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 00:59:51,104][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 01:00:30,749][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 01:01:10,402][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 01:02:27,045][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.76
+[2023-03-25 01:02:27,045][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.32
+[2023-03-25 01:02:27,045][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.81
+
+[2023-03-25 01:02:27,537][    INFO] ===========> Epoch: 61, LR: 0.00548, Previous best Changed IoU: 79.04, Overall Accuracy: 98.84
+[2023-03-25 01:02:28,454][    INFO] Iters: 0, Total loss: 0.007, Loss x: 0.011, Loss s: 0.007, Loss w_fp: 0.001, Mask ratio: 0.944
+[2023-03-25 01:03:08,410][    INFO] Iters: 89, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-25 01:03:48,194][    INFO] Iters: 178, Total loss: 0.008, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 01:04:27,845][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 01:05:07,518][    INFO] Iters: 356, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 01:05:47,197][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 01:06:26,862][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 01:07:06,507][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 01:08:22,750][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.77
+[2023-03-25 01:08:22,750][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.49
+[2023-03-25 01:08:22,750][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.83
+
+[2023-03-25 01:08:23,281][    INFO] ===========> Epoch: 62, LR: 0.00522, Previous best Changed IoU: 79.04, Overall Accuracy: 98.84
+[2023-03-25 01:08:24,225][    INFO] Iters: 0, Total loss: 0.012, Loss x: 0.022, Loss s: 0.002, Loss w_fp: 0.000, Mask ratio: 0.993
+[2023-03-25 01:09:03,975][    INFO] Iters: 89, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 01:09:43,685][    INFO] Iters: 178, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 01:10:23,376][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 01:11:03,046][    INFO] Iters: 356, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 01:11:42,739][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 01:12:22,417][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 01:13:02,079][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 01:14:18,565][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.76
+[2023-03-25 01:14:18,566][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.11
+[2023-03-25 01:14:18,566][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.81
+
+[2023-03-25 01:14:19,057][    INFO] ===========> Epoch: 63, LR: 0.00496, Previous best Changed IoU: 79.04, Overall Accuracy: 98.84
+[2023-03-25 01:14:19,976][    INFO] Iters: 0, Total loss: 0.017, Loss x: 0.032, Loss s: 0.005, Loss w_fp: 0.001, Mask ratio: 0.942
+[2023-03-25 01:14:59,630][    INFO] Iters: 89, Total loss: 0.006, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 01:15:39,335][    INFO] Iters: 178, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 01:16:19,029][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 01:16:58,743][    INFO] Iters: 356, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 01:17:38,419][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 01:18:18,105][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 01:18:57,769][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 01:20:14,756][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.77
+[2023-03-25 01:20:14,756][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.37
+[2023-03-25 01:20:14,756][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.83
+
+[2023-03-25 01:20:15,255][    INFO] ===========> Epoch: 64, LR: 0.00470, Previous best Changed IoU: 79.04, Overall Accuracy: 98.84
+[2023-03-25 01:20:16,193][    INFO] Iters: 0, Total loss: 0.003, Loss x: 0.003, Loss s: 0.005, Loss w_fp: 0.000, Mask ratio: 0.972
+[2023-03-25 01:20:55,847][    INFO] Iters: 89, Total loss: 0.006, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 01:21:35,530][    INFO] Iters: 178, Total loss: 0.006, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.978
+[2023-03-25 01:22:15,228][    INFO] Iters: 267, Total loss: 0.006, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 01:22:54,916][    INFO] Iters: 356, Total loss: 0.007, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 01:23:34,613][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 01:24:14,293][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 01:24:53,966][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 01:26:11,195][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.76
+[2023-03-25 01:26:11,195][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.22
+[2023-03-25 01:26:11,195][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.81
+
+[2023-03-25 01:26:11,697][    INFO] ===========> Epoch: 65, LR: 0.00443, Previous best Changed IoU: 79.04, Overall Accuracy: 98.84
+[2023-03-25 01:26:12,641][    INFO] Iters: 0, Total loss: 0.004, Loss x: 0.006, Loss s: 0.002, Loss w_fp: 0.001, Mask ratio: 0.984
+[2023-03-25 01:26:52,285][    INFO] Iters: 89, Total loss: 0.006, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 01:27:31,935][    INFO] Iters: 178, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 01:28:11,590][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 01:28:51,314][    INFO] Iters: 356, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 01:29:30,999][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 01:30:10,715][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 01:30:50,370][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 01:32:06,564][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.77
+[2023-03-25 01:32:06,564][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.29
+[2023-03-25 01:32:06,565][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.82
+
+[2023-03-25 01:32:07,062][    INFO] ===========> Epoch: 66, LR: 0.00417, Previous best Changed IoU: 79.04, Overall Accuracy: 98.84
+[2023-03-25 01:32:08,008][    INFO] Iters: 0, Total loss: 0.008, Loss x: 0.014, Loss s: 0.001, Loss w_fp: 0.001, Mask ratio: 0.975
+[2023-03-25 01:32:47,668][    INFO] Iters: 89, Total loss: 0.006, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.978
+[2023-03-25 01:33:27,321][    INFO] Iters: 178, Total loss: 0.006, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 01:34:06,973][    INFO] Iters: 267, Total loss: 0.006, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.978
+[2023-03-25 01:34:46,650][    INFO] Iters: 356, Total loss: 0.006, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 01:35:26,360][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 01:36:06,050][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 01:36:45,723][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 01:38:02,156][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.79
+[2023-03-25 01:38:02,156][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.85
+[2023-03-25 01:38:02,156][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.84
+
+[2023-03-25 01:38:02,662][    INFO] ===========> Epoch: 67, LR: 0.00390, Previous best Changed IoU: 79.04, Overall Accuracy: 98.84
+[2023-03-25 01:38:03,588][    INFO] Iters: 0, Total loss: 0.004, Loss x: 0.007, Loss s: 0.002, Loss w_fp: 0.000, Mask ratio: 0.990
+[2023-03-25 01:38:43,277][    INFO] Iters: 89, Total loss: 0.006, Loss x: 0.010, Loss s: 0.004, Loss w_fp: 0.001, Mask ratio: 0.973
+[2023-03-25 01:39:22,942][    INFO] Iters: 178, Total loss: 0.007, Loss x: 0.011, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 01:40:02,631][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 01:40:42,301][    INFO] Iters: 356, Total loss: 0.007, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 01:41:21,980][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 01:42:01,680][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 01:42:41,369][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 01:43:58,044][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.76
+[2023-03-25 01:43:58,044][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.09
+[2023-03-25 01:43:58,044][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.81
+
+[2023-03-25 01:43:58,539][    INFO] ===========> Epoch: 68, LR: 0.00363, Previous best Changed IoU: 79.04, Overall Accuracy: 98.84
+[2023-03-25 01:43:59,546][    INFO] Iters: 0, Total loss: 0.005, Loss x: 0.010, Loss s: 0.002, Loss w_fp: 0.000, Mask ratio: 0.981
+[2023-03-25 01:44:39,169][    INFO] Iters: 89, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 01:45:18,830][    INFO] Iters: 178, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 01:45:58,493][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 01:46:38,146][    INFO] Iters: 356, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 01:47:17,812][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 01:47:57,482][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 01:48:37,165][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 01:49:53,674][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.73
+[2023-03-25 01:49:53,675][    INFO] ***** Evaluation ***** >>>> Changed IoU: 77.40
+[2023-03-25 01:49:53,675][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.78
+
+[2023-03-25 01:49:54,170][    INFO] ===========> Epoch: 69, LR: 0.00335, Previous best Changed IoU: 79.04, Overall Accuracy: 98.84
+[2023-03-25 01:49:55,120][    INFO] Iters: 0, Total loss: 0.012, Loss x: 0.022, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.982
+[2023-03-25 01:50:34,790][    INFO] Iters: 89, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.974
+[2023-03-25 01:51:14,546][    INFO] Iters: 178, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 01:51:54,199][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 01:52:33,868][    INFO] Iters: 356, Total loss: 0.007, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 01:53:13,638][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 01:53:53,306][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 01:54:33,009][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 01:55:49,334][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.77
+[2023-03-25 01:55:49,335][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.28
+[2023-03-25 01:55:49,335][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.82
+
+[2023-03-25 01:55:49,836][    INFO] ===========> Epoch: 70, LR: 0.00308, Previous best Changed IoU: 79.04, Overall Accuracy: 98.84
+[2023-03-25 01:55:50,733][    INFO] Iters: 0, Total loss: 0.001, Loss x: 0.001, Loss s: 0.001, Loss w_fp: 0.000, Mask ratio: 0.993
+[2023-03-25 01:56:30,359][    INFO] Iters: 89, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 01:57:10,014][    INFO] Iters: 178, Total loss: 0.007, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 01:57:49,678][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 01:58:29,366][    INFO] Iters: 356, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 01:59:09,027][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 01:59:48,708][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:00:28,387][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:01:45,759][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.78
+[2023-03-25 02:01:45,759][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.52
+[2023-03-25 02:01:45,759][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.83
+
+[2023-03-25 02:01:46,260][    INFO] ===========> Epoch: 71, LR: 0.00280, Previous best Changed IoU: 79.04, Overall Accuracy: 98.84
+[2023-03-25 02:01:47,216][    INFO] Iters: 0, Total loss: 0.009, Loss x: 0.017, Loss s: 0.001, Loss w_fp: 0.000, Mask ratio: 0.962
+[2023-03-25 02:02:26,880][    INFO] Iters: 89, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.978
+[2023-03-25 02:03:06,535][    INFO] Iters: 178, Total loss: 0.007, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.978
+[2023-03-25 02:03:46,202][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.978
+[2023-03-25 02:04:25,860][    INFO] Iters: 356, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:05:05,557][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 02:05:45,240][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:06:24,921][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:07:41,679][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.78
+[2023-03-25 02:07:41,679][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.62
+[2023-03-25 02:07:41,679][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.83
+
+[2023-03-25 02:07:42,178][    INFO] ===========> Epoch: 72, LR: 0.00252, Previous best Changed IoU: 79.04, Overall Accuracy: 98.84
+[2023-03-25 02:07:43,108][    INFO] Iters: 0, Total loss: 0.006, Loss x: 0.011, Loss s: 0.001, Loss w_fp: 0.000, Mask ratio: 0.995
+[2023-03-25 02:08:22,761][    INFO] Iters: 89, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 02:09:02,503][    INFO] Iters: 178, Total loss: 0.006, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:09:42,192][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:10:21,848][    INFO] Iters: 356, Total loss: 0.006, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:11:01,529][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:11:41,218][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:12:20,905][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:13:37,168][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.76
+[2023-03-25 02:13:37,168][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.17
+[2023-03-25 02:13:37,169][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.82
+
+[2023-03-25 02:13:37,659][    INFO] ===========> Epoch: 73, LR: 0.00223, Previous best Changed IoU: 79.04, Overall Accuracy: 98.84
+[2023-03-25 02:13:38,586][    INFO] Iters: 0, Total loss: 0.013, Loss x: 0.023, Loss s: 0.004, Loss w_fp: 0.000, Mask ratio: 0.994
+[2023-03-25 02:14:18,238][    INFO] Iters: 89, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.978
+[2023-03-25 02:14:57,936][    INFO] Iters: 178, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.978
+[2023-03-25 02:15:37,612][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:16:17,284][    INFO] Iters: 356, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:16:56,949][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:17:36,620][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:18:16,310][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:19:32,835][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.79
+[2023-03-25 02:19:32,835][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.78
+[2023-03-25 02:19:32,835][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.84
+
+[2023-03-25 02:19:33,333][    INFO] ===========> Epoch: 74, LR: 0.00194, Previous best Changed IoU: 79.04, Overall Accuracy: 98.84
+[2023-03-25 02:19:34,307][    INFO] Iters: 0, Total loss: 0.002, Loss x: 0.003, Loss s: 0.002, Loss w_fp: 0.000, Mask ratio: 0.993
+[2023-03-25 02:20:13,989][    INFO] Iters: 89, Total loss: 0.006, Loss x: 0.010, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.979
+[2023-03-25 02:20:53,648][    INFO] Iters: 178, Total loss: 0.006, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.978
+[2023-03-25 02:21:33,346][    INFO] Iters: 267, Total loss: 0.006, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.978
+[2023-03-25 02:22:13,028][    INFO] Iters: 356, Total loss: 0.006, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:22:52,754][    INFO] Iters: 445, Total loss: 0.006, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:23:32,586][    INFO] Iters: 534, Total loss: 0.006, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:24:12,412][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:25:30,424][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.77
+[2023-03-25 02:25:30,424][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.24
+[2023-03-25 02:25:30,424][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.82
+
+[2023-03-25 02:25:30,921][    INFO] ===========> Epoch: 75, LR: 0.00165, Previous best Changed IoU: 79.04, Overall Accuracy: 98.84
+[2023-03-25 02:25:31,865][    INFO] Iters: 0, Total loss: 0.011, Loss x: 0.022, Loss s: 0.002, Loss w_fp: 0.000, Mask ratio: 0.990
+[2023-03-25 02:26:11,612][    INFO] Iters: 89, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.975
+[2023-03-25 02:26:51,316][    INFO] Iters: 178, Total loss: 0.007, Loss x: 0.013, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:27:31,032][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:28:10,760][    INFO] Iters: 356, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 02:28:50,455][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 02:29:30,144][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 02:30:09,832][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:31:26,484][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.78
+[2023-03-25 02:31:26,485][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.60
+[2023-03-25 02:31:26,485][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.83
+
+[2023-03-25 02:31:27,126][    INFO] ===========> Epoch: 76, LR: 0.00135, Previous best Changed IoU: 79.04, Overall Accuracy: 98.84
+[2023-03-25 02:31:28,077][    INFO] Iters: 0, Total loss: 0.005, Loss x: 0.008, Loss s: 0.003, Loss w_fp: 0.001, Mask ratio: 0.975
+[2023-03-25 02:32:07,714][    INFO] Iters: 89, Total loss: 0.006, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.979
+[2023-03-25 02:32:47,367][    INFO] Iters: 178, Total loss: 0.006, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.979
+[2023-03-25 02:33:27,036][    INFO] Iters: 267, Total loss: 0.006, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.978
+[2023-03-25 02:34:06,689][    INFO] Iters: 356, Total loss: 0.006, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:34:46,371][    INFO] Iters: 445, Total loss: 0.006, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:35:26,015][    INFO] Iters: 534, Total loss: 0.006, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:36:05,633][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:37:22,280][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.76
+[2023-03-25 02:37:22,281][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.08
+[2023-03-25 02:37:22,281][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.82
+
+[2023-03-25 02:37:22,785][    INFO] ===========> Epoch: 77, LR: 0.00104, Previous best Changed IoU: 79.04, Overall Accuracy: 98.84
+[2023-03-25 02:37:23,705][    INFO] Iters: 0, Total loss: 0.015, Loss x: 0.030, Loss s: 0.001, Loss w_fp: 0.000, Mask ratio: 0.990
+[2023-03-25 02:38:03,338][    INFO] Iters: 89, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 02:38:43,005][    INFO] Iters: 178, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:39:22,678][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 02:40:02,372][    INFO] Iters: 356, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:40:42,031][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.978
+[2023-03-25 02:41:21,714][    INFO] Iters: 534, Total loss: 0.006, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.978
+[2023-03-25 02:42:01,393][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:43:18,930][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.78
+[2023-03-25 02:43:18,931][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.58
+[2023-03-25 02:43:18,931][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.83
+
+[2023-03-25 02:43:19,574][    INFO] ===========> Epoch: 78, LR: 0.00072, Previous best Changed IoU: 79.04, Overall Accuracy: 98.84
+[2023-03-25 02:43:20,511][    INFO] Iters: 0, Total loss: 0.002, Loss x: 0.003, Loss s: 0.003, Loss w_fp: 0.001, Mask ratio: 0.955
+[2023-03-25 02:44:00,190][    INFO] Iters: 89, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.978
+[2023-03-25 02:44:39,856][    INFO] Iters: 178, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 02:45:19,507][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.976
+[2023-03-25 02:45:59,201][    INFO] Iters: 356, Total loss: 0.006, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:46:38,933][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:47:18,611][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.978
+[2023-03-25 02:47:58,243][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:49:14,240][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.76
+[2023-03-25 02:49:14,240][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.10
+[2023-03-25 02:49:14,240][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.82
+
+[2023-03-25 02:49:14,739][    INFO] ===========> Epoch: 79, LR: 0.00039, Previous best Changed IoU: 79.04, Overall Accuracy: 98.84
+[2023-03-25 02:49:15,675][    INFO] Iters: 0, Total loss: 0.005, Loss x: 0.009, Loss s: 0.002, Loss w_fp: 0.000, Mask ratio: 0.985
+[2023-03-25 02:49:55,321][    INFO] Iters: 89, Total loss: 0.006, Loss x: 0.011, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.978
+[2023-03-25 02:50:34,967][    INFO] Iters: 178, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:51:14,651][    INFO] Iters: 267, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:51:54,404][    INFO] Iters: 356, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:52:34,155][    INFO] Iters: 445, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:53:13,889][    INFO] Iters: 534, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:53:53,571][    INFO] Iters: 623, Total loss: 0.007, Loss x: 0.012, Loss s: 0.003, Loss w_fp: 0.000, Mask ratio: 0.977
+[2023-03-25 02:55:10,093][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.79
+[2023-03-25 02:55:10,093][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.74
+[2023-03-25 02:55:10,093][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.84
+

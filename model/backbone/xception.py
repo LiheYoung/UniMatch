@@ -1,9 +1,6 @@
 import math
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
-import torch.utils.model_zoo as model_zoo
-from torch.nn import init
 
 bn_mom = 0.0003
 __all__ = ['xception']
@@ -46,7 +43,7 @@ class Block(nn.Module):
         elif isinstance(atrous, int):
             atrous_list = [atrous] * 3
             atrous = atrous_list
-        idx = 0
+        
         self.head_relu = True
         if out_filters != in_filters or strides != 1:
             self.skip = nn.Conv2d(in_filters, out_filters, 1, stride=strides, bias=False)

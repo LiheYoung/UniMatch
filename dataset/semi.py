@@ -24,10 +24,9 @@ class SemiDataset(Dataset):
                 self.ids = f.read().splitlines()
             if mode == 'train_l' and nsample is not None:
                 self.ids *= math.ceil(nsample / len(self.ids))
-                random.shuffle(self.ids)
                 self.ids = self.ids[:nsample]
         else:
-            with open('partitions/%s/val.txt' % name, 'r') as f:
+            with open('splits/%s/val.txt' % name, 'r') as f:
                 self.ids = f.read().splitlines()
 
     def __getitem__(self, item):

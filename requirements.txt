@@ -1,8 +1,10 @@
 pyyaml>=5.4.0
 easydict
-tensorboardX
+TensorBoardX
+tensorboard
 opencv-python
 scipy
 sklearn
 scikit-image
 einops
+h5py

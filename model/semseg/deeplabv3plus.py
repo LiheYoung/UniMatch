@@ -11,12 +11,11 @@ class DeepLabV3Plus(nn.Module):
         super(DeepLabV3Plus, self).__init__()
 
         if 'resnet' in cfg['backbone']:
-            self.backbone = \
-                resnet.__dict__[cfg['backbone']](True, multi_grid=cfg['multi_grid'],
-                                                 replace_stride_with_dilation=cfg['replace_stride_with_dilation'])
+            self.backbone = resnet.__dict__[cfg['backbone']](pretrained=True, 
+                                                             replace_stride_with_dilation=cfg['replace_stride_with_dilation'])
         else:
             assert cfg['backbone'] == 'xception'
-            self.backbone = xception(True)
+            self.backbone = xception(pretrained=True)
 
         low_channels = 256
         high_channels = 2048
