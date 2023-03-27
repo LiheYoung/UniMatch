@@ -25,8 +25,6 @@ class="center">
 
 **You can check our [training logs](https://github.com/LiheYoung/UniMatch/blob/main/training-logs) for convenient comparisons during reproducing.**
 
-Below are only part of our results. For more comprenhensive experiments, please refer to our paper. 
-
 **Note: we have added and updated some results in our camera-ready version. Please refer to our [latest version](https://arxiv.org/abs/2208.09910)**.
 
 ### Pascal VOC 2012
@@ -44,7 +42,7 @@ Labeled images are sampled from the **original high-quality** training set. Resu
 
 ### Cityscapes
 
-Results are obtained by DeepLabv3+ based on ResNet-50 and ResNet-101. We reproduce U<sup>2</sup>PL results on ResNet-50.
+Results are obtained by DeepLabv3+ based on ResNet-50/101. We reproduce U<sup>2</sup>PL results on ResNet-50.
 
 **Note: the results differ from our arXiv-V1 because we change the confidence threshold from 0.95 to 0, and change the ResNet output stride from 8 to 16. Therefore, it is currently more efficient to run.**
 
