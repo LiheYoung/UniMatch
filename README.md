@@ -137,11 +137,11 @@ To train on other datasets or splits, please modify
 
 ### FixMatch
 
-Modify the ``method`` from ``unimatch`` to ``fixmatch`` in [train.sh](https://github.com/LiheYoung/UniMatch/blob/main/scripts/train.sh).
+Modify the ``method`` from ``'unimatch'`` to ``'fixmatch'`` in [train.sh](https://github.com/LiheYoung/UniMatch/blob/main/scripts/train.sh).
 
 ### Supervised Baseline
 
-Modify the ``method`` from ``unimatch`` to ``supervised`` in [train.sh](https://github.com/LiheYoung/UniMatch/blob/main/scripts/train.sh), and double the ``batch_size`` in configuration file if you use the same number of GPUs as semi-supervised setting (no need to change ``lr``). 
+Modify the ``method`` from ``'unimatch'`` to ``'supervised'`` in [train.sh](https://github.com/LiheYoung/UniMatch/blob/main/scripts/train.sh), and double the ``batch_size`` in configuration file if you use the same number of GPUs as semi-supervised setting (no need to change ``lr``). 
 
 
 ## Citation
