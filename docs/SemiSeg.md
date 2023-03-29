@@ -9,6 +9,8 @@
 
 - [CVPR 2023] Instance-specific and Model-adaptive Supervision for Semi-supervised Semantic Segmentation [[Paper]](https://arxiv.org/abs/2211.11335) [[Code]](https://github.com/ZhenZHAO/iMAS)
 
+- [CVPR 2023] LaserMix for Semi-Supervised LiDAR Semantic Segmentation [[Paper]](https://arxiv.org/abs/2207.00026) [[Code]](https://github.com/ldkong1205/LaserMix)
+
 - [TIP 2023] Conservative-Progressive Collaborative Learning for Semi-supervised Semantic Segmentation [[Paper]](https://arxiv.org/abs/2211.16701)
 
 ## 2022
