@@ -15,12 +15,13 @@ This codebase contains a strong re-implementation of FixMatch in the field of se
 > [Lihe Yang](https://liheyoung.github.io), [Lei Qi](http://palm.seu.edu.cn/qilei), [Litong Feng](https://scholar.google.com/citations?user=PnNAAasAAAAJ&hl=en), [Wayne Zhang](http://www.statfe.com), [Yinghuan Shi](https://cs.nju.edu.cn/shiyh/index.htm)</br>
 > *In Conference on Computer Vision and Pattern Recognition (CVPR), 2023*
 
+
+**We provide a list of [Awesome Semi-Supervised Semantic Segmentation](./docs/SemiSeg.md) works.**
+
 <p align="left">
 <img src="./docs/framework.png" width=90% height=90% 
 class="center">
 </p>
-
-**We provide a list of [Awesome Semi-Supervised Semantic Segmentation](./docs/SemiSeg.md) works.**
 
 ## Results
 
