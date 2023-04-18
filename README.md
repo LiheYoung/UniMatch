@@ -48,23 +48,27 @@ Results are obtained by DeepLabv3+ based on ResNet-50/101. We reproduce U<sup>2<
 
 **Note: the results differ from our arXiv-V1 because we change the confidence threshold from 0.95 to 0, and change the ResNet output stride from 8 to 16. Therefore, it is currently more efficient to run.**
 
+*You can click on the numbers to be directed to corresponding checkpoints.*
+
 | ResNet-50                   | 1/16      | 1/8       | 1/4       | 1/2       | ResNet-101           | 1/16        | 1/8         | 1/4         | 1/2         |
 | :-------------------------: | :-------: | :-------: | :-------: | :-------: | :------------------: | :---------: | :---------: | :---------: | :---------: |
 | SupBaseline                 | 63.3      | 70.2      | 73.1      | 76.6      | SupBaseline          | 66.3        | 72.8        | 75.0        | 78.0        |
 | U<sup>2</sup>PL             | 70.6      | 73.0      | 76.3      | 77.2      | U<sup>2</sup>PL      | 74.9        | 76.5        | 78.5        | 79.1        |
-| **UniMatch (Ours)**         | **75.0**  | **76.8**  | **77.5**  | **78.2**  | **UniMatch (Ours)**  | **76.6**    | **77.9**    | **79.2**    | **79.5**    |
+| **UniMatch (Ours)**         | [**75.0**](https://drive.google.com/file/d/1J-GjeZRhIhnbxtD8f_lDflXB24S1E995/view?usp=sharing)  | [**76.8**](https://drive.google.com/file/d/1pA-enIDGWSVyhJg7SFIjFQ-nlxetj6-m/view?usp=sharing)  | [**77.5**](https://drive.google.com/file/d/1EEh8XMljUf40wzMblnv9Ez9_dfXYqO7P/view?usp=sharing)  | [**78.6**](https://drive.google.com/file/d/18Bd43RsXhTw9RL3F9Vn9lz_Gs5KQWaTE/view?usp=sharing)  | **UniMatch (Ours)**  | [**76.6**](https://drive.google.com/file/d/1qmCBLC9aj57kz1_OptvK6YTo4GwxTsiK/view?usp=sharing)    | [**77.9**](https://drive.google.com/file/d/14LrPkWC8QIMO44da5pGflyOrW_Fdxo0U/view?usp=sharing)    | [**79.2**](https://drive.google.com/file/d/1cL-p2_FIwEe9Y4AapSjlLmt4hdAZzX7a/view?usp=sharing)    | [**79.5**](https://drive.google.com/file/d/1ve2BAYoh8wzQxhKD-CE7bsjcR5KqQEa3/view?usp=sharing)    |
 
 
 ### COCO
 
 Results are obtained by DeepLabv3+ based on Xception-65.
 
+*You can click on the numbers to be directed to corresponding checkpoints.*
+
 | Method                      | 1/512 (232) | 1/256 (463) | 1/128 (925) | 1/64 (1849) | 1/32 (3697) |
 | :-------------------------: | :---------: | :---------: | :---------: | :---------: | :---------: |
 | SupBaseline                 | 22.9        | 28.0        | 33.6        | 37.8        | 42.2        |
 | PseudoSeg                   | 29.8        | 37.1        | 39.1        | 41.8        | 43.6        |
 | PC<sup>2</sup>Seg           | 29.9        | 37.5        | 40.1        | 43.7        | 46.1        |
-| **UniMatch (Ours)**         | **31.9**    | **38.9**    | **44.4**    | **48.2**    | **49.8**    |
+| **UniMatch (Ours)**         | [**31.9**](https://drive.google.com/file/d/1kFgg0SGLzS7SJI8sYPQKGLnw8G060kjz/view?usp=sharing)    | [**38.9**](https://drive.google.com/file/d/1scx1FanOcmaut8eVESLaSx7-DiT5JJA6/view?usp=sharing)    | [**44.4**](https://drive.google.com/file/d/1oojVn12tgPW_m94tAOU5YYVZ7xJJitCj/view?usp=sharing)    | [**48.2**](https://drive.google.com/file/d/1tI1AZ8rY6hYQrs216iz2NmlAfLl8f1uP/view?usp=sharing)    | [**49.8**](https://drive.google.com/file/d/1hwRr0IIhdeKH2JYO--iOLl5y69sJ0UYm/view?usp=sharing)    |
 
 
 ### More Scenarios
