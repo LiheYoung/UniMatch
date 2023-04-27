@@ -133,6 +133,7 @@ Please modify your dataset path in configuration files.
 ```bash
 # use torch.distributed.launch
 sh scripts/train.sh <num_gpu> <port>
+# To fully reproduce our results, the <num_gpu> should be set as 4 on all three datasets
 
 # or use slurm
 # sh scripts/slurm_train.sh <num_gpu> <port> <partition>
