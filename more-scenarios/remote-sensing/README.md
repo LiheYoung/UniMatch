@@ -1,5 +1,14 @@
 # UniMatch for Remote Sensing Change Detection
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/revisiting-weak-to-strong-consistency-in-semi/semi-supervised-change-detection-on-whu-5)](https://paperswithcode.com/sota/semi-supervised-change-detection-on-whu-5?p=revisiting-weak-to-strong-consistency-in-semi)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/revisiting-weak-to-strong-consistency-in-semi/semi-supervised-change-detection-on-whu-10)](https://paperswithcode.com/sota/semi-supervised-change-detection-on-whu-10?p=revisiting-weak-to-strong-consistency-in-semi)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/revisiting-weak-to-strong-consistency-in-semi/semi-supervised-change-detection-on-whu-20)](https://paperswithcode.com/sota/semi-supervised-change-detection-on-whu-20?p=revisiting-weak-to-strong-consistency-in-semi)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/revisiting-weak-to-strong-consistency-in-semi/semi-supervised-change-detection-on-whu-40)](https://paperswithcode.com/sota/semi-supervised-change-detection-on-whu-40?p=revisiting-weak-to-strong-consistency-in-semi)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/revisiting-weak-to-strong-consistency-in-semi/semi-supervised-change-detection-on-levir-cd)](https://paperswithcode.com/sota/semi-supervised-change-detection-on-levir-cd?p=revisiting-weak-to-strong-consistency-in-semi)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/revisiting-weak-to-strong-consistency-in-semi/semi-supervised-change-detection-on-levir-cd-1)](https://paperswithcode.com/sota/semi-supervised-change-detection-on-levir-cd-1?p=revisiting-weak-to-strong-consistency-in-semi)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/revisiting-weak-to-strong-consistency-in-semi/semi-supervised-change-detection-on-levir-cd-2)](https://paperswithcode.com/sota/semi-supervised-change-detection-on-levir-cd-2?p=revisiting-weak-to-strong-consistency-in-semi)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/revisiting-weak-to-strong-consistency-in-semi/semi-supervised-change-detection-on-levir-cd-3)](https://paperswithcode.com/sota/semi-supervised-change-detection-on-levir-cd-3?p=revisiting-weak-to-strong-consistency-in-semi)
+
 We provide the official PyTorch implementation of our UniMatch in the scenario of **semi-supervised remote sensing change detection**:
 
 > **[Revisiting Weak-to-Strong Consistency in Semi-Supervised Semantic Segmentation](https://arxiv.org/abs/2208.09910)**</br>
