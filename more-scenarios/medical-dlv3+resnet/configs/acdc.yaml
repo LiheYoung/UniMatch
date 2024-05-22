@@ -1,0 +1,24 @@
+# merged from um/med/acdc and um/pascal
+
+# arguments for dataset
+dataset: acdc
+nclass: 4
+crop_size: 256
+data_root: /data/data/ACDC
+
+# arguments for training
+epochs: 80
+batch_size: 2 # per GPU x 4 GPUs
+lr: 0.001
+lr_multi: 10.0
+criterion:
+  name: CELoss
+  kwargs:
+    ignore_index: 255
+conf_thresh: 0.95
+
+# arguments for model
+model: deeplabv3plus
+backbone: resnet101
+replace_stride_with_dilation: [False, False, True]
+dilations: [6, 12, 18]
