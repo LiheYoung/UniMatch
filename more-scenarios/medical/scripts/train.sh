@@ -18,7 +18,7 @@ save_path=exp/$dataset/$method/$exp/$split
 
 mkdir -p $save_path
 
-python -m torch.distributed.launch \
+torchrun \
     --nproc_per_node=$1 \
     --master_addr=localhost \
     --master_port=$2 \

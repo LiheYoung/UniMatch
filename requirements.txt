@@ -4,7 +4,7 @@ TensorBoardX
 tensorboard
 opencv-python
 scipy
-sklearn
+scikit-learn
 scikit-image
 einops
 h5py

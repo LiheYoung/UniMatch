@@ -25,7 +25,7 @@ parser.add_argument('--config', type=str, required=True)
 parser.add_argument('--labeled-id-path', type=str, required=True)
 parser.add_argument('--unlabeled-id-path', type=str, required=True)
 parser.add_argument('--save-path', type=str, required=True)
-parser.add_argument('--local_rank', default=0, type=int)
+parser.add_argument('--local-rank', default=0, type=int)
 parser.add_argument('--port', default=None, type=int)
 
 
