@@ -1,3 +1,11 @@
+# UniMatch for Medical Images, Remote Sensing and Industry datasets
+
+**This repository contains an adaptation of [UniMatch](https://github.com/LiheYoung/UniMatch) for datasets in
+the fields of Medical, Remote Sensing and Industy using DeeplabV3plus and Resnet.** \
+**It was created based on UniMatch with an effort to only add minimal changes.**
+
+The following is the original Readme.
+
 # UniMatch
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/revisiting-weak-to-strong-consistency-in-semi/semi-supervised-semantic-segmentation-on-21)](https://paperswithcode.com/sota/semi-supervised-semantic-segmentation-on-21?p=revisiting-weak-to-strong-consistency-in-semi)
