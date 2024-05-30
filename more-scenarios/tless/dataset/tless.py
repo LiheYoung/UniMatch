@@ -6,7 +6,7 @@ from copy import deepcopy
 from dataset.transform import *
 
 import torch
-from torch.utils.data import Dataset, ConcatDataset, random_split
+from torch.utils.data import Dataset, ConcatDataset
 from torchvision import transforms
 
 
@@ -16,27 +16,14 @@ def get_datasets(root, size, split):
     l_set = []
     u_set = []
     for ds in datasets:
-        if ds == "train_pbr":
-            full_size_train = 50000
-        elif ds == "train_primesense":
-            full_size_train = 37584
-        elif ds == "train_render_reconst":
-            full_size_train = 76860
-        else:
-            raise ValueError(f'Invalid split: {ds}')
+        unlabeled_txt_path = os.path.join(root, 'splits', split, f"{ds}_unlabeled.txt")
+        labeled_txt_path = os.path.join(root, 'splits', split, f"{ds}_labeled.txt")
 
-        indexes = range(full_size_train)
-        l_index, u_indexes = random_split(
-            dataset=indexes,
-            lengths=[split, 1 - split],
-            generator=torch.Generator().manual_seed(42)
-        )
-        l_dataset = TlessDataset(dataset=ds, root=root, mode='train_l', indexes=l_index, nsample=len(u_indexes),
-                                 size=size)
-        u_dataset = TlessDataset(dataset=ds, root=root, mode='train_u', indexes=u_indexes, size=size)
+        u_dataset = TlessDataset(dataset=ds, root=root, mode='train_u', txt_file=unlabeled_txt_path, size=size)
+        l_dataset = TlessDataset(dataset=ds, root=root, mode='train_l', txt_file=labeled_txt_path, nsample=len(u_dataset.ids), size=size)
 
-        l_set.append(l_dataset)
         u_set.append(u_dataset)
+        l_set.append(l_dataset)
 
     labeled_dataset = ConcatDataset(l_set)
     unlabeled_dataset = ConcatDataset(u_set)
@@ -44,7 +31,7 @@ def get_datasets(root, size, split):
 
 
 class TlessDataset(Dataset):
-    def __init__(self, dataset, root, mode, indexes=None, nsample=None, size=None):
+    def __init__(self, dataset, root, mode, txt_file=None, nsample=None, size=None):
         self.dataset = dataset
         self.root = root
         self.mode = mode
@@ -53,17 +40,18 @@ class TlessDataset(Dataset):
         if self.dataset not in ['train_pbr', 'test_primesense', 'train_primesense', 'train_render_reconst']:
             raise ValueError(f'Invalid split: {self.dataset}')
 
-        self.ids = list(sorted(
-            glob.glob(os.path.join(self.root, dataset, "*", "rgb", "*.jpg" if dataset == 'train_pbr' else "*.png"))))
+        if mode == 'train_l' or mode == 'train_u':
+            self.ids = self.read_txt_file(txt_file)
+            if mode == 'train_l' and nsample is not None:
+                self.ids *= math.ceil(nsample / len(self.ids))
+                self.ids = self.ids[:nsample]
+        else:
+            self.ids = os.path.join(root, 'splits', dataset, 'val.txt')
+
+        self.masks = self.collect_masks()
+
         self.scene_gt_infos = list(sorted(glob.glob(os.path.join(self.root, dataset, "*", "scene_gt_info.json"))))
         self.scene_gts = list(sorted(glob.glob(os.path.join(self.root, dataset, "*", "scene_gt.json"))))
-
-        if indexes:
-            self.ids = [self.ids[i] for i in indexes]
-
-        if mode == 'train_l' and nsample is not None:
-            self.ids *= math.ceil(nsample / len(self.ids))
-            self.ids = self.ids[:nsample]
 
         self.void_classes = [0]
         self.valid_classes = range(1, 31)  # classes: 30
@@ -75,10 +63,33 @@ class TlessDataset(Dataset):
             with open(scene_gt_path) as f:
                 self.scene_gt_cache[scene_gt_path] = json.load(f)
 
+    def read_txt_file(self, txt_file):
+        ids = []
+        with open(txt_file, 'r') as f:
+            for line in f:
+                scene_id, image_id = line.strip().split()
+                image_ext = "jpg" if self.dataset == 'train_pbr' else "png"
+                img_path = os.path.join(self.root, self.dataset, scene_id, "rgb", f"{image_id}.{image_ext}")
+                ids.append(img_path)
+        return sorted(ids)
+
+
+    def collect_masks(self):
+        masks = {}
+        for img_path in self.ids:
+            scene_id = os.path.basename(os.path.dirname(os.path.dirname(img_path)))
+            im_id = os.path.basename(img_path).split('.')[0]
+            masks_path = os.path.join(self.root, self.dataset, scene_id, "mask_visib")
+            masks_files = sorted([f for f in os.listdir(masks_path) if f.startswith(im_id) and f.endswith('.png')])
+            masks[im_id] = [os.path.join(masks_path, f) for f in masks_files]
+        return masks
+
     def __getitem__(self, idx):
         img_path = self.ids[idx]
-        im_id = img_path.split('/')[-1].split('.')[0]
-        scene_id = img_path.split('/')[-3]
+        im_id = os.path.basename(img_path).split('.')[0]
+        #im_id = img_path.split('/')[-1].split('.')[0]
+        scene_id = os.path.basename(os.path.dirname(os.path.dirname(img_path)))
+        #scene_id = img_path.split('/')[-3]
 
         img = Image.open(img_path).convert("RGB")
 
@@ -91,8 +102,7 @@ class TlessDataset(Dataset):
         # we ignore non-visible objects
 
         # mask_visib
-        masks_visib_path = sorted(
-            glob.glob(os.path.join(self.root, self.dataset, scene_id, "mask_visib", f"{im_id}_*.png")))
+        masks_visib_path = self.masks[im_id]
         masks_visib = torch.zeros((len(masks_visib_path), img.size[1], img.size[0]), dtype=torch.uint8)
         for i, mp in enumerate(masks_visib_path):
             masks_visib[i] = torch.from_numpy(np.array(Image.open(mp).convert("L")))
