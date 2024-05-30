@@ -9,9 +9,9 @@ split: 0.4
 valset: test_primesense
 
 # arguments for training
-epochs: 80
+epochs: 30
 batch_size: 16 # per GPU x 1 GPUs
-lr: 0.04
+lr: 0.02
 lr_multi: 1.0
 criterion:
   name: CELoss
