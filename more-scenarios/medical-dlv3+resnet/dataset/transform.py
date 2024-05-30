@@ -5,6 +5,7 @@ import random
 import torch
 from PIL import ImageFilter
 from scipy import ndimage
+from torchvision import transforms
 
 
 def random_rot_flip(img, mask):
@@ -51,3 +52,12 @@ def obtain_cutmix_box(img_size, p=0.5, size_min=0.02, size_max=0.4, ratio_1=0.3,
 
     return mask
 
+def normalize(img, mask=None):
+    img = transforms.Compose([
+        transforms.ToTensor(),
+        transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),
+    ])(img)
+    if mask is not None:
+        mask = torch.from_numpy(np.array(mask)).long()
+        return img, mask
+    return img

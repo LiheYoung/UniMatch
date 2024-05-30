@@ -1,6 +1,6 @@
 # copied from um/med/acdc
 
-from dataset.transform import random_rot_flip, random_rotate, blur, obtain_cutmix_box
+from transform import random_rot_flip, random_rotate, blur, obtain_cutmix_box
 
 from copy import deepcopy
 import h5py
@@ -10,10 +10,8 @@ import os
 from PIL import Image
 import random
 from scipy.ndimage.interpolation import zoom
-from scipy import ndimage
 import torch
 from torch.utils.data import Dataset
-import torch.nn.functional as F
 from torchvision import transforms
 
 
