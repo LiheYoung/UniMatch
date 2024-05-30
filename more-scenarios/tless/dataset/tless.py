@@ -69,6 +69,12 @@ class TlessDataset(Dataset):
         self.valid_classes = range(1, 31)  # classes: 30
         self.class_map = dict(zip(self.valid_classes, range(30)))
 
+        # Cache parsed JSON files
+        self.scene_gt_cache = {}
+        for scene_gt_path in self.scene_gts:
+            with open(scene_gt_path) as f:
+                self.scene_gt_cache[scene_gt_path] = json.load(f)
+
     def __getitem__(self, idx):
         img_path = self.ids[idx]
         im_id = img_path.split('/')[-1].split('.')[0]
@@ -79,15 +85,14 @@ class TlessDataset(Dataset):
         # Object ids
         scene_gt_item = self.scene_gts[int(scene_id)] if self.dataset == 'train_pbr' else self.scene_gts[
             int(scene_id) - 1]
-        with open(scene_gt_item) as f:
-            scene_gt = json.load(f)[str(int(im_id))]
+        scene_gt = self.scene_gt_cache[scene_gt_item][str(int(im_id))]
         obj_ids = [gt['obj_id'] for gt in scene_gt]
 
         # we ignore non-visible objects
 
         # mask_visib
-        masks_visib_path = list(
-            sorted(glob.glob(os.path.join(self.root, self.dataset, scene_id, "mask_visib", f"{im_id}_*.png"))))
+        masks_visib_path = sorted(
+            glob.glob(os.path.join(self.root, self.dataset, scene_id, "mask_visib", f"{im_id}_*.png")))
         masks_visib = torch.zeros((len(masks_visib_path), img.size[1], img.size[0]), dtype=torch.uint8)
         for i, mp in enumerate(masks_visib_path):
             masks_visib[i] = torch.from_numpy(np.array(Image.open(mp).convert("L")))
