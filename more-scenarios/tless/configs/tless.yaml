@@ -5,7 +5,7 @@ dataset: tless
 nclass: 31 # maybe 30?
 crop_size: 512 # maybe try lower
 data_root: /data/tless
-split: 0.4
+split: 40
 valset: test_primesense
 
 # arguments for training

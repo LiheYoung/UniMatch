@@ -16,8 +16,8 @@ def get_datasets(root, size, split):
     l_set = []
     u_set = []
     for ds in datasets:
-        unlabeled_txt_path = os.path.join(root, 'splits', split, f"{ds}_unlabeled.txt")
-        labeled_txt_path = os.path.join(root, 'splits', split, f"{ds}_labeled.txt")
+        unlabeled_txt_path = f"splits/{split}/{ds}_unlabeled.txt"
+        labeled_txt_path = f"splits/{split}/{ds}_labeled.txt"
 
         u_dataset = TlessDataset(dataset=ds, root=root, mode='train_u', txt_file=unlabeled_txt_path, size=size)
         l_dataset = TlessDataset(dataset=ds, root=root, mode='train_l', txt_file=labeled_txt_path, nsample=len(u_dataset.ids), size=size)
@@ -46,7 +46,7 @@ class TlessDataset(Dataset):
                 self.ids *= math.ceil(nsample / len(self.ids))
                 self.ids = self.ids[:nsample]
         else:
-            self.ids = os.path.join(root, 'splits', dataset, 'val.txt')
+            self.ids = self.read_txt_file(f"splits/{dataset}.txt")
 
         self.masks = self.collect_masks()
 
