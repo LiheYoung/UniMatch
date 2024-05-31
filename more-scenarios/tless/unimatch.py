@@ -117,7 +117,7 @@ def main():
                 (img_u_w, img_u_s1, img_u_s2, ignore_mask, cutmix_box1, cutmix_box2),
                 (img_u_w_mix, img_u_s1_mix, img_u_s2_mix, ignore_mask_mix, _, _)) in enumerate(loader):
 
-            if rank == 0:
+            if rank == 0 and i % 10 == 0:
                 logger.info('Starting epoch {:}'.format(i))
 
             img_x, mask_x = img_x.cuda(), mask_x.cuda()
