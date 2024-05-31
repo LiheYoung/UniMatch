@@ -10,7 +10,7 @@ valset: test_primesense
 
 # arguments for training
 epochs: 30
-batch_size: 16 # per GPU x 1 GPUs
+batch_size: 8 # per GPU x 1 GPUs
 lr: 0.02
 lr_multi: 1.0
 criterion:

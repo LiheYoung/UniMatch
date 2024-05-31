@@ -1,8 +1,6 @@
 import logging
 import math
 import os
-import glob
-import json
 from copy import deepcopy
 from dataset.transform import *
 
@@ -13,7 +11,7 @@ from torchvision import transforms
 from util.utils import init_log
 
 
-# split should be between 0 and 1 indicating percentage of labeled data
+# split should be between 0 and 100 indicating percentage of labeled data
 def get_datasets(root, size, split):
     datasets = ['train_pbr', 'train_primesense']
     l_set = []
@@ -61,57 +59,12 @@ class TlessDataset(Dataset):
 
         logger.info(f"Finished loading txt, Number of images: {len(self.ids)}, First: {self.ids[0]}")
 
-        logger.info("Loading scene_gt")
-        self.scene_gts = list(sorted(glob.glob(os.path.join(self.root, dataset, "*", "scene_gt.json"))))
-        logger.info(f"Finished loading scene_gt, Number of scene_gt: {len(self.scene_gts)}, First: {self.scene_gts[0]}")
-
-        self.void_classes = [0]
-        self.valid_classes = range(1, 31)  # classes: 30
-        self.class_map = dict(zip(self.valid_classes, range(30)))
-
-        logger.info("Caching scene_gt")
-        # Cache parsed JSON files
-        self.scene_gt_cache = {}
-        for scene_gt_path in self.scene_gts:
-            with open(scene_gt_path) as f:
-                self.scene_gt_cache[scene_gt_path] = json.load(f)
-        logger.info("Finished caching scene_gt")
-
     def __getitem__(self, idx):
         id = self.ids[idx]
-        img_path = id.split(' ')[0]
-        mask_count = int(id.split(' ')[1])
-
-        path_parts = img_path.split('/')
-
-        scene_id = path_parts[1]
-        img_id = path_parts[3].split('.')[0]
-
-        image_path = os.path.join(self.root, img_path)
-        img = Image.open(image_path).convert("RGB")
-
-        # Object ids
-        scene_gt_item = self.scene_gts[int(scene_id)] if self.dataset == 'train_pbr' else self.scene_gts[
-            int(scene_id) - 1]
-        scene_gt = self.scene_gt_cache[scene_gt_item][str(int(img_id))]
-        obj_ids = [gt['obj_id'] for gt in scene_gt]
-
-        # we ignore non-visible objects
-
-        # mask_visib
-        mask_paths = [os.path.join(self.root, self.dataset, scene_id, "mask_visib", f"{img_id}_{i:06}.png") for i in range(int(mask_count))]
-        masks_visib = torch.zeros((mask_count, img.size[1], img.size[0]), dtype=torch.uint8)
-        for i, mp in enumerate(mask_paths):
-            masks_visib[i] = torch.from_numpy(np.array(Image.open(mp).convert("L")))
-
-        # create a single label image
-        label = torch.zeros((img.size[1], img.size[0]), dtype=torch.int64)
-        for i, id in enumerate(obj_ids):
-            # print(id, np.sum(masks_visib[i].numpy()==255))
-            label[masks_visib[i] == 255] = id
-
-        # going back to "mask" naming from unimatch
-        mask = Image.fromarray(label.numpy().astype(np.uint8))
+        relative_img_path = id.split(' ')[0]
+        relative_mask_path = id.split(' ')[1]
+        img = Image.open(os.path.join(self.root, relative_img_path)).convert("RGB")
+        mask = Image.open(os.path.join(self.root, relative_mask_path)).convert("L")
 
         # continue with unimatch code
 
