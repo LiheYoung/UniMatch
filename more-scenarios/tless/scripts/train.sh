@@ -9,7 +9,7 @@ now=$(date +"%Y%m%d_%H%M%S")
 dataset='tless'
 method='unimatch'
 exp='r101'
-split='40'
+split='1_2'
 
 config=configs/${dataset}.yaml
 save_path=/data/out/exp/$dataset/$method/$exp/$split

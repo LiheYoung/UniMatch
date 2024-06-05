@@ -5,11 +5,11 @@ dataset: tless
 nclass: 31
 crop_size: 512 # maybe try lower
 data_root: /data/tless
-split: 40
+split: 1_2
 valset: test_primesense
 
 # arguments for training
-epochs: 20
+epochs: 30
 batch_size: 8 # per GPU x 1 GPUs
 lr: 0.02
 lr_multi: 1.0
