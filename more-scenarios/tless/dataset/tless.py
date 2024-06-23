@@ -13,6 +13,9 @@ from util.utils import init_log
 
 # split should be between 0 and 100 indicating percentage of labeled data
 def get_datasets(root, size, split):
+    if split == 1:
+        l, u = get_datasets(root, size, '1_2')
+        return ConcatDataset([l, u])
     datasets = ['train_pbr', 'train_primesense']
     l_set = []
     u_set = []
