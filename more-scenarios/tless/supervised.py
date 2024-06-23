@@ -133,6 +133,7 @@ def main():
 
     iters = 0
     total_iters = len(trainloader) * cfg['epochs']
+    print("Iters per run: ", len(trainloader))
     previous_best = 0.0
     epoch = -1
 
