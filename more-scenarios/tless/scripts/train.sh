@@ -12,7 +12,7 @@ exp='r101'
 split='1_2'
 
 config=configs/${dataset}.yaml
-save_path=/data/out/exp/$dataset/$method/$exp/$split
+save_path=exp/$dataset/$method/$exp/$split/01
 
 mkdir -p $save_path
 
