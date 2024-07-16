@@ -195,6 +195,7 @@ def main():
             iters = epoch * len(trainloader_u) + i
             lr = cfg['lr'] * (1 - iters / total_iters) ** 0.9
             optimizer.param_groups[0]["lr"] = lr
+            optimizer.param_groups[1]["lr"] = lr * cfg["lr_multi"]
 
             if rank == 0:
                 writer.add_scalar('train/loss_all', loss.item(), iters)
