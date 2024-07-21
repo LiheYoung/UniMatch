@@ -44,7 +44,7 @@ class ACDCDataset(Dataset):
         if self.mode == 'val':
             img = np.repeat(img[..., np.newaxis], 3, axis=-1)
             img = img.transpose(0, 3, 1, 2)
-            return normalize(img, mask)
+            return normalize(torch.from_numpy(img).float(), torch.from_numpy(mask).long())
 
         if random.random() > 0.5:
             img, mask = random_rot_flip(img, mask)
@@ -59,7 +59,7 @@ class ACDCDataset(Dataset):
         img = np.repeat(img[..., np.newaxis], 3, axis=-1)
 
         if self.mode == 'train_l':
-            return normalize(img.transpose(2,0,1), mask)
+            return normalize(torch.from_numpy(img.transpose(2,0,1)).float(), torch.from_numpy(np.array(mask)).long())
 
         img = Image.fromarray((img * 255).astype(np.uint8))
         img_s1, img_s2 = deepcopy(img), deepcopy(img)
@@ -77,7 +77,7 @@ class ACDCDataset(Dataset):
         cutmix_box2 = obtain_cutmix_box(self.size, p=0.5)
         img_s2 = np.array(img_s2).transpose(2,0,1) / 255.0
 
-        return normalize(img), normalize(img_s1), normalize(img_s2), cutmix_box1, cutmix_box2
+        return normalize(torch.from_numpy(img).float()), normalize(torch.from_numpy(img_s1).float()), normalize(torch.from_numpy(img_s2).float()), cutmix_box1, cutmix_box2
 
     def __len__(self):
         return len(self.ids)
