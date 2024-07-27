@@ -13,12 +13,16 @@ from util.utils import init_log
 
 # split should be between 0 and 100 indicating percentage of labeled data
 def get_datasets(root, size, split):
-    if split == 1:
-        l, u = get_datasets(root, size, '1_2')
-        return ConcatDataset([l, u])
     datasets = ['train_pbr', 'train_primesense']
     l_set = []
     u_set = []
+    if split == 1:
+        for ds in datasets:
+            labeled_txt_path = f"splits/{split}/{ds}_labeled.txt"
+            l_dataset = TlessDataset(dataset=ds, root=root, mode='train_l', txt_file=labeled_txt_path, size=size)
+            l_set.append(l_dataset)
+        return ConcatDataset(l_set)
+
     for ds in datasets:
         unlabeled_txt_path = f"splits/{split}/{ds}_unlabeled.txt"
         labeled_txt_path = f"splits/{split}/{ds}_labeled.txt"
