@@ -16,7 +16,7 @@ def get_datasets(root, size, split):
     datasets = ['train_pbr', 'train_primesense']
     l_set = []
     u_set = []
-    if split == 1:
+    if split == '1':
         for ds in datasets:
             labeled_txt_path = f"splits/{split}/{ds}_labeled.txt"
             l_dataset = TlessDataset(dataset=ds, root=root, mode='train_l', txt_file=labeled_txt_path, size=size)

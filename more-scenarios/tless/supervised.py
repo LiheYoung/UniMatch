@@ -121,7 +121,7 @@ def main():
 
     criterion = nn.CrossEntropyLoss(**cfg['criterion']['kwargs']).cuda(local_rank)
 
-    trainset = get_datasets(cfg['data_root'], cfg['crop_size'], 1)
+    trainset = get_datasets(cfg['data_root'], cfg['crop_size'], cfg['split'])
     valset = TlessDataset(cfg['valset'], cfg['data_root'], 'val')
 
     trainsampler = torch.utils.data.distributed.DistributedSampler(trainset)
