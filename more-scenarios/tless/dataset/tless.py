@@ -2,33 +2,25 @@ import logging
 import math
 import os
 from copy import deepcopy
-from dataset.transform import *
 
-import torch
 from torch.utils.data import Dataset, ConcatDataset
-from torchvision import transforms
 
+from dataset.transform import *
 from util.utils import init_log
 
 
-# split should be between 0 and 100 indicating percentage of labeled data
 def get_datasets(root, size, split):
     datasets = ['train_pbr', 'train_primesense']
     l_set = []
     u_set = []
-    if split == '1':
-        for ds in datasets:
-            labeled_txt_path = f"splits/{split}/{ds}_labeled.txt"
-            l_dataset = TlessDataset(dataset=ds, root=root, mode='train_l', txt_file=labeled_txt_path, size=size)
-            l_set.append(l_dataset)
-        return ConcatDataset(l_set)
 
     for ds in datasets:
         unlabeled_txt_path = f"splits/{split}/{ds}_unlabeled.txt"
         labeled_txt_path = f"splits/{split}/{ds}_labeled.txt"
 
         u_dataset = TlessDataset(dataset=ds, root=root, mode='train_u', txt_file=unlabeled_txt_path, size=size)
-        l_dataset = TlessDataset(dataset=ds, root=root, mode='train_l', txt_file=labeled_txt_path, nsample=len(u_dataset.ids), size=size)
+        l_dataset = TlessDataset(dataset=ds, root=root, mode='train_l', txt_file=labeled_txt_path,
+                                 nsample=len(u_dataset.ids), size=size)
 
         u_set.append(u_dataset)
         l_set.append(l_dataset)
@@ -36,6 +28,19 @@ def get_datasets(root, size, split):
     labeled_dataset = ConcatDataset(l_set)
     unlabeled_dataset = ConcatDataset(u_set)
     return labeled_dataset, unlabeled_dataset
+
+
+def get_sup_datasets(root, size, split):
+    datasets = ['train_pbr', 'train_primesense']
+    l_set = []
+
+    for ds in datasets:
+        labeled_txt_path = f"splits/{split}/{ds}_labeled.txt"
+        l_dataset = TlessDataset(dataset=ds, root=root, mode='train_l', txt_file=labeled_txt_path, size=size)
+        l_set.append(l_dataset)
+
+    labeled_dataset = ConcatDataset(l_set)
+    return labeled_dataset
 
 
 class TlessDataset(Dataset):
