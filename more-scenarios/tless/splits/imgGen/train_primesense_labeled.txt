@@ -1,0 +1,10 @@
+train_primesense/000008/rgb/000523.png train_primesense/000008/mask_visib/000523.png
+train_primesense/000008/rgb/000523.png train_primesense/000008/mask_visib/000523.png
+train_primesense/000008/rgb/000523.png train_primesense/000008/mask_visib/000523.png
+train_primesense/000008/rgb/000523.png train_primesense/000008/mask_visib/000523.png
+train_primesense/000008/rgb/000523.png train_primesense/000008/mask_visib/000523.png
+train_primesense/000008/rgb/000523.png train_primesense/000008/mask_visib/000523.png
+train_primesense/000008/rgb/000523.png train_primesense/000008/mask_visib/000523.png
+train_primesense/000008/rgb/000523.png train_primesense/000008/mask_visib/000523.png
+train_primesense/000008/rgb/000523.png train_primesense/000008/mask_visib/000523.png
+train_primesense/000008/rgb/000523.png train_primesense/000008/mask_visib/000523.png
