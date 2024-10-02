@@ -1,12 +1,15 @@
+# copied from pascal and more
+
 # arguments for dataset
 dataset: tless
 nclass: 31
-crop_size: 512 
+crop_size: 512
 data_root: /data/tless
 valset: test_primesense
 
 # arguments for training
-epochs: 30
+epochs: 31
+epochsToRun: 1
 batch_size: 4 # per GPU x 2 GPUs
 lr: 0.005
 lr_multi: 10.0

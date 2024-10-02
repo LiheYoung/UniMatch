@@ -15,7 +15,7 @@ from torch.utils.data import DataLoader
 from torch.utils.tensorboard import SummaryWriter
 import yaml
 
-from dataset.tless import TlessDataset, get_datasets
+from dataset.tless import TlessDataset, get_sup_datasets
 from model.semseg.deeplabv3plus import DeepLabV3Plus
 from util.classes import CLASSES
 from util.utils import count_params, AverageMeter, intersectionAndUnion, init_log
@@ -24,6 +24,7 @@ from util.dist_helper import setup_distributed
 parser = argparse.ArgumentParser(
     description='Revisiting Weak-to-Strong Consistency in Semi-Supervised Semantic Segmentation')
 parser.add_argument('--config', type=str, required=True)
+parser.add_argument('--split', type=str, required=True)
 parser.add_argument('--save-path', type=str, required=True)
 parser.add_argument('--local-rank', default=0, type=int)
 parser.add_argument('--port', default=None, type=int)
@@ -121,7 +122,7 @@ def main():
 
     criterion = nn.CrossEntropyLoss(**cfg['criterion']['kwargs']).cuda(local_rank)
 
-    trainset = get_datasets(cfg['data_root'], cfg['crop_size'], cfg['split'])
+    trainset = get_sup_datasets(cfg['data_root'], cfg['crop_size'], args.split)
     valset = TlessDataset(cfg['valset'], cfg['data_root'], 'val')
 
     trainsampler = torch.utils.data.distributed.DistributedSampler(trainset)
