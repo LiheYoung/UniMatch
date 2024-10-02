@@ -8,7 +8,7 @@ now=$(date +"%Y%m%d_%H%M%S")
 # split: ['5%', '10%', '20%', '40%']
 dataset='whu'
 method='unimatch'
-exp='deeplabv3plus_r50'
+exp='deeplabv3plus_r101'
 split='20%'
 
 config=configs/${dataset}.yaml

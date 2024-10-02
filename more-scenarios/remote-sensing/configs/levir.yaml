@@ -2,7 +2,7 @@
 dataset: levir
 nclass: 2
 crop_size: 256
-data_root: Your/LEVIR-CD/Path
+data_root: /data/LEVIR-CD256
 
 # arguments for training
 epochs: 80
@@ -13,7 +13,7 @@ conf_thresh: 0.95
 
 # arguments for model
 model: deeplabv3plus
-backbone: resnet50
+backbone: resnet101
 replace_stride_with_dilation: [False, False, True]
 dilations: [6, 12, 18]
 
